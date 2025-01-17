@@ -5,5 +5,4 @@ ans.forEach(element => {
     element.style.margin="1rem";
     element.style.textDecoration="underline";
 
-    
 });
