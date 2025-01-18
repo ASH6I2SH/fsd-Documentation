@@ -22,7 +22,7 @@ para.forEach(element => {
 });
 
 hand.forEach(element => {
-   element.innerHTML+=`<img style="height:1.5rem; width: 1.5rem;" src="../images/hand.png" alt="">`;
+   element.innerHTML+=`<img class="insertImg"  src="../images/hand.png" alt="">`;
     
 });
 

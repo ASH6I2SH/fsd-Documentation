@@ -54,6 +54,22 @@ a{
     -webkit-tap-highlight-color: transparent;
     
 }
+.insertImg{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 2vw;
+}
+@media (max-width: 1000px) {
+    a{
+        font-size: 4.5vw;
+        width: 70%;
+    }
+    .insertImg{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 2vw;
+    }
+}
 a:focus {
     outline: none;
   }
