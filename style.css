@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     
+    
 }
 
 html, body{
@@ -11,15 +12,18 @@ html, body{
 
 img{
     width: 100%;
+   
     border-radius: 0.5rem;
     padding: 0 0.5vw;
+    margin-right: vw;
 }
 
 .main{
-    background-color: #feecff;
+    color: #ffffff;
+    background-color: #000000;
     width: 100%;
-    
-    border: 5px solid rgb(105, 0, 112);
+    border: 6px solid #000000;
+    padding: 2vw;
     
 }
 
@@ -28,19 +32,26 @@ h1{
 }
 
 h2{
-    
-    background-color: #6b066d;
-    color: #fda0ff;
-    padding: 2.5rem 1rem;
+    /* text-align: center; */
+    background-color: #751b12;
+    color: white;
+    padding: 1rem 1rem;
     border-radius: 1rem;
-    margin: 1.5vw;
+    margin: 3vw;
+    border-bottom: 2px solid #ffffff;
+    
 }
 .noth2{
-    padding: 1rem 1rem;
-    margin: 1.5vw 0.5vw;
-    background-color: #c769c8;
+    
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    margin: 3vw;
+
+    background-color: #dc5d52;
     text-decoration: none;
-    color: #380439;
+    color: #ffffff;
+    border-bottom: none;
+    border-right: 2px solid #ffffff;
 
 }
 p{
@@ -49,7 +60,7 @@ p{
 a{  
     display: inline-block;
     width: 90%;
-    color: #fda0ff;
+    color: white;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     
@@ -59,21 +70,10 @@ a{
     width: 1.5rem;
     border-radius: 2vw;
 }
-@media (max-width: 1000px) {
-    a{
-        font-size: 4.5vw;
-        width: 70%;
-    }
-    .insertImg{
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 2vw;
-    }
-}
 a:focus {
     outline: none;
-  }
-  
+}
+
 .containAnch:hover{
     background-color: #2e032f;
     
@@ -82,3 +82,14 @@ nav{
     font-size: 2.5rem;
     padding: 2rem 0;
 }
+    @media (max-width: 1000px) {
+        a{
+            font-size: 4.5vw;
+            width: 70%;
+        }
+        .insertImg{
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 2vw;
+        }
+    }
