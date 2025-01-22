@@ -54,12 +54,12 @@ var headings = gsap.utils.toArray("h2");
 
 headings.forEach((heading) => {
   gsap.from(heading, {
+    opacity: 0,
     Transform: "translate(-210%)",
     duration: 1,
     scrollTrigger: {
       trigger: heading,
-      end: "top 70%",
-      
+      end: "top 60%",
       scrub: 1,
       toggleActions: "restart none none none",
     },
@@ -67,15 +67,27 @@ headings.forEach((heading) => {
 });
 
 var images = gsap.utils.toArray("img");
-
 images.forEach((image) => {
   gsap.from(image, {
     scale: 0,
     duration: 1,
     scrollTrigger: {
       trigger: image,
-      end: "top 70%",
-      
+      end: "top 60%",
+      scrub: 1,
+      toggleActions: "restart none none none",
+    },
+  });
+});
+
+var para = gsap.utils.toArray("p");
+para.forEach((par) => {
+  gsap.from(par, {
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: par,
+      end: "top 60%",
       scrub: 1,
       toggleActions: "restart none none none",
     },
