@@ -59,7 +59,7 @@ headings.forEach((heading) => {
     scrollTrigger: {
       trigger: heading,
       end: "top 70%",
-      markers: true,
+      
       scrub: 1,
       toggleActions: "restart none none none",
     },
@@ -75,7 +75,7 @@ images.forEach((image) => {
     scrollTrigger: {
       trigger: image,
       end: "top 70%",
-      markers: true,
+      
       scrub: 1,
       toggleActions: "restart none none none",
     },
