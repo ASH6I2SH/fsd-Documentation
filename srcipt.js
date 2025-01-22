@@ -31,7 +31,7 @@ para.forEach(element => {
 
 
 hand.forEach(element => {
-   element.innerHTML+=`<img class="insertImg"  src="../images/hand.png" alt="">`;
+   element.innerHTML+=`<img class="insertImg"  src="../headings/hand.png" alt="">`;
     
 });
 
@@ -50,7 +50,37 @@ lt.from(".contentList",{
 })
 
 
+var headings = gsap.utils.toArray("h2");
 
+headings.forEach((heading) => {
+  gsap.from(heading, {
+    Transform: "translate(-210%)",
+    duration: 1,
+    scrollTrigger: {
+      trigger: heading,
+      end: "top 70%",
+      markers: true,
+      scrub: 1,
+      toggleActions: "restart none none none",
+    },
+  });
+});
+
+var images = gsap.utils.toArray("img");
+
+images.forEach((image) => {
+  gsap.from(image, {
+    scale: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: image,
+      end: "top 70%",
+      markers: true,
+      scrub: 1,
+      toggleActions: "restart none none none",
+    },
+  });
+});
 
 
 

@@ -108,6 +108,7 @@ nav{
 .top a{
     text-align: center;
 }
+
 @media (max-width: 1000px) {
     a{
         font-size: 4.5vw;
@@ -117,5 +118,12 @@ nav{
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 2vw;
+    }
+    .top{
+    width: 11vw;
+    height: 11vw;
+    }
+    .contentList{
+        margin: 1.5vw;
     }
 }
