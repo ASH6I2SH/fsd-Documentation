@@ -126,6 +126,14 @@ nav{
 .top a{
     text-align: center;
 }
+.end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+}
 
 @media (max-width: 1000px) {
     a{
