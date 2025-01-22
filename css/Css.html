@@ -7,13 +7,32 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body >
-
+  <div class="top"> <a href="#top">top</a></div>
   <div class="main">
 
     <nav><h1 style="text-align: center;">CSS</h1></nav>
+
+    <div  id="top" class="contentTable">
+      <a class="contentList" href="#Introduction">Introduction</a>
+      <a class="contentList" href="#CSSTypes">CSS Types</a>
+      <a class="contentList" href="#OverflowCSSProperty">Overflow CSS Property</a>
+      <a class="contentList" href="#CSSboilerplate">CSS boilerplate</a>
+      <a class="contentList" href="#elementatthecenter">How to set an element at the center of webpage</a>
+      <a class="contentList" href="#Nouseofpositionabsoluteandfixedwithdisplayflex">No use of position absolute  and fixed with display flex</a>
+      <a class="contentList" href="#BasicNavCSS">Basic Nav CSS</a>
+      <a class="contentList" href="#UpperCasingofText">Upper Casing of Text</a>
+      <a class="contentList" href="#samecssproperty">same css property</a>
+      <a class="contentList" href="#PositionProperty">Position Property</a>
+      <a class="contentList" href="#AbsoluteorFixedpositionedElements">Absolute or Fixed positioned Elements</a>
+      <a class="contentList" href="#Typesofpositioning">Typesofpositioning</a>
+      <a class="contentList" href="#Keypointsforresponsivewebapplication">Key points for responsive web application</a>
+      
+      
+    </div>
+
     <h1 style="padding: 0 1rem; "><a style="color: #ee5b00;" href="https://devdocs.io/css/">Usefull Document</a></h1>
     
-        <h2>Introduction</h2>
+        <h2 id="Introduction">Introduction</h2>
             
              <p> CSS stands for Cascading style sheets is used to style HTML documents. It is used to describe how the html elements will look on the screen.
               
@@ -23,7 +42,7 @@
               <em>The html elements have no background color by default.</em> </p>
             
         
-        <h2>CSS Types</h2>
+        <h2 id="CSSTypes">CSS Types</h2>
             
                <p> Inline CSS <br>
                     using style tag. Ex- &lt;body style="background-color: #eaf6f6;" &gt; <br>
@@ -41,47 +60,47 @@
 
             
         
-              <h2>Overflow CSS Property</h2>
+              <h2 id="OverflowCSSProperty">Overflow CSS Property</h2>
               <img src="./images/overflowcssproperty (1).webp" alt="">
               <img style="width: 100%" src="./images/overflowcssproperty (2).webp" alt="">
         
-            <h2>CSS boilerplate</h2>
+            <h2 id="CSSboilerplate">CSS boilerplate</h2>
             <img style="width: 100%" src="./images/image1.webp" alt="">
         
 
         
-            <h2>How to set an element at the center of webpage</h2>
+            <h2 id="elementatthecenter">How to set an element at the center of webpage</h2>
             <img style="width: 100%" src="./images/image2.webp" alt="">
         
-        <h2>No use of position absolute with display flex</h2>
+        <h2 id="Nouseofpositionabsoluteandfixedwithdisplayflex">No use of position absolute  and fixed with display flex</h2>
             <img style="width: 100%" src="./images/NoabsoluteWithflex.webp" alt="">
         
-        <h2>Basic Nav CSS</h2>
+        <h2 id="BasicNavCSS">Basic Nav CSS</h2>
           <img style="width: 100%" src="./images/nav.webp" alt="">
       
-      <h2>Upper Casing of Text</h2>
+      <h2 id="UpperCasingofText">Upper Casing of Text</h2>
         <img style="width: 100%" src="./images/uppercase.webp" alt="">
       
-      <h2>Position Property</h2>
+      <h2 id="PositionProperty">Position Property</h2>
         <img style="width: 100%" src="./images/position.jpeg" alt="">
       
       
-        <h2>Absolute or Fixed positioned Elements:</h2>
+        <h2 id="AbsoluteorFixedpositionedElements">Absolute or Fixed positioned Elements:</h2>
         <p>1. These two elements moved out of the normal document flow and shift at the top left position(keep in note that it is not ocupying any space there, you can think as if it is floating over there above the webpage)  and behave like aline elements having no width and height. </p>
         <p>2. Absolutely or Fixed positioned elements are moved from the normal document flow that's why <em> they lost the space,<strong> if the element is block level then it behaves like an inlign element having no width and heigth occupying only the content space</strong></em> </p>
-        <h2>Setting Icons Font size</h2>
+        <h2 id="">Setting Icons Font size</h2>
         <img style="width: 100%" src="./images/iconfont.jpeg" alt="">
       
-      <h2>Image covering area while usig img tag</h2>
+      <h2 id="">Image covering area while usig img tag</h2>
         <img style="width: 100%" src="./images/imagemanipulationwhileusingimagetag.webp" alt="">
       
-      <h2>We can show an image by two ways </h2>
+      <h2 id="">We can show an image by two ways </h2>
       <p>1. By using img tag and object-fit, object position properties are used here to adjust image. <br><br> 2. By using div element with background-image propery and background-size, background-position are used here. </p>
       <img style="width: 100%" src="./images/divbackgroundimage.webp" alt=""> 
-      <h2>When we want to use the same css property(like translate) to an element with different value but we don't want to overwrite it</h2>
+      <h2 id="samecssproperty">When we want to use the same css property(like translate) to an element with different value but we don't want to overwrite it</h2>
       <p>ex-</p>
     <img src="./images/nooverwrite.webp" alt=""> 
-       <h2>Position Property:</h2>
+       <h2 id="PositionProperty">Position Property:</h2>
       
             <h2 class="noth2" >static</h2>
 <p>The element is positioned according to the Normal Flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
@@ -112,18 +131,13 @@ This value always creates a new stacking context. Note that a sticky element "st
           
     
     
-      <h2>Types of positioning</h2>
+      <h2 id="Typesofpositioning">Types of positioning</h2>
+      <img style="width: 100%" src="./images/position1.webp" alt="">
+      <img style="width: 100%" src="./images/position2.webp" alt="">
       
-        
-          <img style="width: 100%" src="./images/position1.webp" alt="">
-        
-        <img style="width: 100%" src="./images/position2.webp" alt="">
-      
-    
-    
-      <h2>Key points for responsive web application</h2>
+
+      <h2 id="Keypointsforresponsivewebapplication">Key points for responsive web application</h2>
       <img src="./images/responsiveWeb (1).webp" alt="">
-      
       <img style="width: 100%;" src="./images/responsiveWeb (4).webp" alt="">
       <img style="width: 100%;" src="./images/responsiveWeb (5).webp" alt="">
       <img style="width: 100%;" src="./images/responsiveWeb (6).webp" alt="">
@@ -151,11 +165,19 @@ This value always creates a new stacking context. Note that a sticky element "st
       <img style="width: 100%;" src="./images/responsiveWeb (28).webp" alt="">
       <img style="width: 100%;" src="./images/responsiveWeb (29).webp" alt="">
       <img style="width: 100%;" src="./images/responsiveWeb (30).webp" alt="">
-    
+     
+      <h2 id="">Top margin colapse for the first and bottom margin colapse for the last child</h2>
+      <img src="./images/topmargincolapseforthefirsandthelastchild.png" alt="">
     
 
   </div>
-    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- gsap min js -->
+   <!-- search gsap cdn on browser and copy the link and paste it here -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- gsap scrollTrigger min js -->
+  <!-- search gsap cdn on browser and look for scrollTrigger may be at 2nd last you will get --> 
     <script src="../srcipt.js"></script>
 </body>
 </html>

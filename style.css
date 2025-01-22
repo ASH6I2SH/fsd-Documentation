@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    
-    
+    box-sizing: border-box;
+
 }
 
 html, body{
@@ -12,7 +12,6 @@ html, body{
 
 img{
     width: 100%;
-   
     border-radius: 0.5rem;
     padding: 0 0.5vw;
     margin-right: vw;
@@ -46,7 +45,6 @@ h2{
     display: inline-block;
     padding: 1rem 0.5rem;
     margin: 3vw;
-
     background-color: #dc5d52;
     text-decoration: none;
     color: #ffffff;
@@ -63,7 +61,6 @@ a{
     color: white;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
-    
 }
 .insertImg{
     height: 1.5rem;
@@ -73,23 +70,52 @@ a{
 a:focus {
     outline: none;
 }
-
 .containAnch:hover{
     background-color: #2e032f;
-    
 }
 nav{
     font-size: 2.5rem;
     padding: 2rem 0;
 }
-    @media (max-width: 1000px) {
-        a{
-            font-size: 4.5vw;
-            width: 70%;
-        }
-        .insertImg{
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 2vw;
-        }
+.contentTable{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10vw;
+}
+.contentList{
+    display: inline-block;
+    margin: 1vw;
+    font-size: 3vw;
+}
+.top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    background-color: rgb(141, 136, 136);
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+
+}
+.top a{
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    a{
+        font-size: 4.5vw;
+        width: 70%;
     }
+    .insertImg{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 2vw;
+    }
+}
