@@ -22,7 +22,7 @@ contentList.forEach(((element)=> {
     element.textContent= `${count2++}. ${contentListText}`
 }))    
 
-    
+     
 para.forEach(element => {
     var parainnerHtml= element.innerHTML;
     element.innerHTML= `<h3>${parainnerHtml}</h3>`;
@@ -93,6 +93,46 @@ para.forEach((par) => {
     },
   });
 });
+
+var string=  document.querySelector(".string");
+
+var initialPath= `M 10 100 Q 600 100 1190 100`;
+var finalPath= `M 10 100 Q 600 100 1190 100`;
+
+string.addEventListener("mousemove", function(dets){
+
+  var stringY= string.getBoundingClientRect().top;
+  var stringX= string.getBoundingClientRect().left;
+  console.log(dets.y - stringY);
+  initialPath= `M 10 100 Q ${dets.x - stringX} ${dets.y-stringY} 1190 100`;
+
+  gsap.to("svg path",{
+    attr: {d:initialPath},
+    ease: "elastic.out"
+   })
+
+})
+
+string.addEventListener("mouseleave", function(dets){
+
+  gsap.to("svg path",{
+    attr: {d:finalPath},
+    ease: "elastic.out"
+   })
+})
+
+window.addEventListener("mousemove", function(dets){
+  document.querySelector(".ball").style.visibility="visible";
+  mouseX= dets.x;
+  console.log(mouseX);
+  mouseY= dets.y;
+  gsap.to(".ball",{
+    left: mouseX + "px",
+    top: mouseY + "px",
+    ease: Power3,
+  })
+
+})
 
 
 
