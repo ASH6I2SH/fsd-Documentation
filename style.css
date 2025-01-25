@@ -175,6 +175,9 @@ svg{
     width: 11vw;
     height: 11vw;
     }
+    .home i{
+        font-size: 7vw;
+    }
     .contentList{
         margin: 1.5vw;
     }
