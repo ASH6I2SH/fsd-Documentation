@@ -55,7 +55,7 @@ var headings = gsap.utils.toArray("h2");
 headings.forEach((heading) => {
   gsap.from(heading, {
     opacity: 0,
-    Transform: "translate(-210%)",
+    y: -30,
     duration: 1,
     scrollTrigger: {
       trigger: heading,
@@ -84,7 +84,8 @@ var para = gsap.utils.toArray("p");
 para.forEach((par) => {
   gsap.from(par, {
     opacity: 0,
-    duration: 1,
+    y: -30,
+    duration: 3,
     scrollTrigger: {
       trigger: par,
       end: "top 60%",
