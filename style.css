@@ -124,6 +124,9 @@ nav{
 .home a{
     text-align: center;
 }
+.home i{
+    font-size: 2vw;
+}
 .top a{
     text-align: center;
 }
