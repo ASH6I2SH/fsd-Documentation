@@ -42,12 +42,12 @@ lt.from("h1",{
     duration: 1,
     delay:0.5
 })
-lt.from(".contentList",{
-    opacity: 0,
-    y: -30,
-    duration: 1,
-    stagger: 0.2
-})
+// lt.from(".contentList",{
+//     opacity: 0,
+//     y: -30,
+//     duration: 1,
+//     stagger: 0.2
+// })
 
 
 var headings = gsap.utils.toArray("h2");
