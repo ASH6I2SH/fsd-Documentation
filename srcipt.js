@@ -35,13 +35,13 @@ hand.forEach(element => {
     
 });
 
-var lt= gsap.timeline();
-lt.from("h1",{
-    opacity: 0,
-    y: -30,
-    duration: 1,
-    delay:0.5
-})
+// var lt= gsap.timeline();
+// lt.from("h1",{
+//     opacity: 0,
+//     y: -30,
+//     duration: 1,
+//     delay:0.5
+// })
 // lt.from(".contentList",{
 //     opacity: 0,
 //     y: -30,
@@ -50,50 +50,50 @@ lt.from("h1",{
 // })
 
 
-var headings = gsap.utils.toArray("h2");
+// var headings = gsap.utils.toArray("h2");
 
-headings.forEach((heading) => {
-  gsap.from(heading, {
-    opacity: 0,
-    y: -30,
-    duration: 1,
-    scrollTrigger: {
-      trigger: heading,
-      end: "top 60%",
-      scrub: 1,
-      toggleActions: "restart none none none",
-    },
-  });
-});
+// headings.forEach((heading) => {
+//   gsap.from(heading, {
+//     opacity: 0,
+//     y: -30,
+//     duration: 1,
+//     scrollTrigger: {
+//       trigger: heading,
+//       end: "top 60%",
+//       scrub: 1,
+//       toggleActions: "restart none none none",
+//     },
+//   });
+// });
 
-var images = gsap.utils.toArray("img");
-images.forEach((image) => {
-  gsap.from(image, {
-    scale: 0,
-    duration: 1,
-    scrollTrigger: {
-      trigger: image,
-      end: "top 60%",
-      scrub: 1,
-      toggleActions: "restart none none none",
-    },
-  });
-});
+// var images = gsap.utils.toArray("img");
+// images.forEach((image) => {
+//   gsap.from(image, {
+//     scale: 0,
+//     duration: 1,
+//     scrollTrigger: {
+//       trigger: image,
+//       end: "top 60%",
+//       scrub: 1,
+//       toggleActions: "restart none none none",
+//     },
+//   });
+// });
 
-var para = gsap.utils.toArray("p");
-para.forEach((par) => {
-  gsap.from(par, {
-    opacity: 0,
-    y: -30,
-    duration: 3,
-    scrollTrigger: {
-      trigger: par,
-      end: "top 60%",
-      scrub: 1,
-      toggleActions: "restart none none none",
-    },
-  });
-});
+// var para = gsap.utils.toArray("p");
+// para.forEach((par) => {
+//   gsap.from(par, {
+//     opacity: 0,
+//     y: -30,
+//     duration: 3,
+//     scrollTrigger: {
+//       trigger: par,
+//       end: "top 60%",
+//       scrub: 1,
+//       toggleActions: "restart none none none",
+//     },
+//   });
+// });
 
 var string=  document.querySelector(".string");
 
