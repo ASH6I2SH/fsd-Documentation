@@ -1,8 +1,8 @@
 var ans= document.querySelectorAll("h2");
 var para= document.querySelectorAll("p");
 var hand= document.querySelectorAll(".containAnch");
-var h2hasanch = document.querySelectorAll(".h2hasanch")
-var anch= document.querySelectorAll(".anch")
+// var h2hasanch = document.querySelectorAll(".h2hasanch")
+// var anch= document.querySelectorAll(".anch")
 var contentList= document.querySelectorAll(".contentList")
 
 
@@ -32,7 +32,6 @@ para.forEach(element => {
 
 hand.forEach(element => {
    element.innerHTML+=`<img class="insertImg"  src="../headings/hand.png" alt="">`;
-    
 });
 
 // var lt= gsap.timeline();
@@ -66,34 +65,34 @@ hand.forEach(element => {
 //   });
 // });
 
-// var images = gsap.utils.toArray("img");
-// images.forEach((image) => {
-//   gsap.from(image, {
-//     scale: 0,
-//     duration: 1,
-//     scrollTrigger: {
-//       trigger: image,
-//       end: "top 60%",
-//       scrub: 1,
-//       toggleActions: "restart none none none",
-//     },
-//   });
-// });
+// // var images = gsap.utils.toArray("img");
+// // images.forEach((image) => {
+// //   gsap.from(image, {
+// //     scale: 0,
+// //     duration: 1,
+// //     scrollTrigger: {
+// //       trigger: image,
+// //       end: "top 60%",
+// //       scrub: 1,
+// //       toggleActions: "restart none none none",
+// //     },
+// //   });
+// // });
 
-// var para = gsap.utils.toArray("p");
-// para.forEach((par) => {
-//   gsap.from(par, {
-//     opacity: 0,
-//     y: -30,
-//     duration: 3,
-//     scrollTrigger: {
-//       trigger: par,
-//       end: "top 60%",
-//       scrub: 1,
-//       toggleActions: "restart none none none",
-//     },
-//   });
-// });
+// // var para = gsap.utils.toArray("p");
+// // para.forEach((par) => {
+// //   gsap.from(par, {
+// //     opacity: 0,
+// //     y: -30,
+// //     duration: 3,
+// //     scrollTrigger: {
+// //       trigger: par,
+// //       end: "top 60%",
+// //       scrub: 1,
+// //       toggleActions: "restart none none none",
+// //     },
+// //   });
+// // });
 
 var string=  document.querySelector(".string");
 
@@ -122,18 +121,17 @@ string.addEventListener("mouseleave", function(dets){
    })
 })
 
-window.addEventListener("mousemove", function(dets){
-  document.querySelector(".ball").style.visibility="visible";
-  mouseX= dets.x;
-  console.log(mouseX);
-  mouseY= dets.y;
-  gsap.to(".ball",{
-    left: mouseX + "px",
-    top: mouseY + "px",
-    ease: Power3,
-  })
-
-})
+// window.addEventListener("mousemove", function(dets){
+//   document.querySelector(".ball").style.visibility="visible";
+//   mouseX= dets.x;
+//   console.log(mouseX);
+//   mouseY= dets.y;
+//   gsap.to(".ball",{
+//     left: mouseX + "px",
+//     top: mouseY + "px",
+//     ease: Power3,
+//   })
+// })
 
 
 
