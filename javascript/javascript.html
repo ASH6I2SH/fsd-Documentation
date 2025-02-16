@@ -29,6 +29,12 @@
         <a class="contentList" href="#forloop">for loop</a>
         <a class="contentList" href="#Whileloop">While loop</a>
         <a class="contentList" href="#Functions">Functions</a>
+        <a class="contentList" href="#Arrowfunction">Arrow function</a>
+        <a class="contentList" href="#CallBackfnc">CallBack fnc</a>
+        <a class="contentList" href="#Firstclassfunction">First class function</a>
+        <a class="contentList" href="#Higherorderfnc">Higher order fnc</a>
+        <a class="contentList" href="#Constructor">Constructor</a>
+        <a class="contentList" href="#PureImpurefnc">Pure Impure fnc</a>
         <a class="contentList" href="#Array">Array</a>
         <a class="contentList" href="#Object">Object</a>
         <a class="contentList" href="#JavascriptVersions">Javascript Versions</a>
@@ -39,19 +45,13 @@
         <a class="contentList" href="#Howtocopyreferencevalues">How to copy reference values</a>
         <a class="contentList" href="#content17">Truthy of Falsy</a>
         <a class="contentList" href="#ForEachLoopForInLoopDoWhileLoop">ForEach Loop ForIn Loop Do While Loop</a>
-        <a class="contentList" href="#CallBackfnc">CallBack fnc</a>
-        <a class="contentList" href="#Firstclassfunction">First class function</a>
-        <a class="contentList" href="#Arrowfunction">Arrow function</a>
         <a class="contentList" href="#howarraysaremadebehindthescenes">how arrays are made behind the scenes</a>
         <a class="contentList" href="#Howtodeleteobjectprop">How to delete object prop</a>
-        <a class="contentList" href="#Higherorderfnc">Higher order fnc</a>
-        <a class="contentList" href="#Constructor">Constructor</a>
         <a class="contentList" href="#Newkeyword">New keyword</a>
         <a class="contentList" href="#IIFI">IIFI</a>
         <a class="contentList" href="#PrototypalInheritence">Prototypal Inheritence</a>
         <a class="contentList" href="#Thiskeyword">This keyword</a>
         <a class="contentList" href="#CallApplyBind">Call Apply Bind</a>
-        <a class="contentList" href="#PureImpurefnc">Pure Impure fnc</a>
         <a class="contentList" href="#content37">DOM</a>
         <a class="contentList" href="#Dommanipulation">Dom manipulation</a>
         <a class="contentList" href="#content36">creating An Element</a>
@@ -114,12 +114,12 @@
       <img style="width: 100%" src="./images/forloop3.webp" alt="">
       <img style="width: 100%" src="./images/forloop4.webp" alt="">
       <img style="width: 100%" src="./images/forloop5.webp" alt="">
-  
-  
+      
+      
       <h2 id="Whileloop">While loop</h2>
       <img src="./images/whileloop.webp" alt="">
-  
-  
+      
+      
       <h2 id="Functions">Functions</h2>
       <img style="width: 100%" src="./images/function1.webp" alt="">
       <img style="width: 100%" src="./images/function2.webp" alt="">
@@ -129,11 +129,97 @@
       <img style="width: 100%" src="./images/function8.webp" alt="">
       <img style="width: 100%" src="./images/function9.webp" alt="">
       <img style="width: 100%" src="./images/function10.webp" alt="">
-
-
-
       
+      <h2 id="Arrowfunction">Arrow function</h2>
+      <img style="width: 100%" src="./images/arrowfnc (1).webp" alt="">
+      <img style="width: 100%" src="./images/arrowfnc (2).webp" alt="">
+      <img style="width: 100%" src="./images/arrowfnc (3).webp" alt="">
+      <img style="width: 100%" src="./images/arrowfnc (4).webp" alt="">
+      <img style="width: 100%" src="./images/arrowfnc (5).webp" alt="">
+      <img style="width: 100%" src="./images/arrowfnc (6).webp" alt="">
+
+      <p>
+        Implicit vs. Explicit Return in JavaScript Arrow Functions <br>
+        In arrow functions, the way you return a value can differ based on syntax: <br> <br>
+        
+        1. Explicit Return ({} with return) <br>
+        Requires {} curly braces and an explicit return statement. <br>
+        Use this when you have multiple statements in the function. <br>
+        Example: <br>
+        const add = (a, b) => { <br>
+            return a + b;  // Explicitly returning a + b <br>
+        }; <br>
+        console.log(add(2, 3)); // Output: 5 <br>
+        Here, {} means you're using a function body, and you must use return to return a value. <br> <br>
+        2. Implicit Return (() without return) <br>
+        No {} means JavaScript automatically returns the result of the expression. <br>
+        Best for simple, single-expression functions. <br>
+        Example: <br>
+        const add = (a, b) => a + b; // Implicit return <br>
+        console.log(add(2, 3)); // Output: 5 <br>
+        or using (): <br> 
+        const multiply = (a, b) => ( <br>
+            a * b  // Implicitly returns the result <br>
+        ); <br>
+        console.log(multiply(3, 4)); // Output: 12 <br>
+        No need to write return explicitly. <br> <br>
+        Key Differences <br>
+        Feature	Explicit Return {}	Implicit Return () <br>
+        Uses {}	✅ Yes	❌ No <br>
+        Needs return	✅ Yes	❌ No (auto-returns) <br>
+        Handles multiple statements	✅ Yes	❌ No (only one expression) <br>
+        Good for complex logic?	✅ Yes	❌ No (better for one-liners) <br> <br>
+        When to Use What? <br>
+        ✅ Use explicit return ({} with return) if the function has multiple statements. <br>
+        ✅ Use implicit return (() without return) for simple one-liner expressions. <br> <br>
+        Example of When to Use Explicit Return <br>
+        const processNumber = (num) => { <br>
+            console.log("Processing:", num); // Side effect (logging) <br>
+            return num * 2;  // Explicit return needed <br>
+        }; <br> <br>
+        Example of When to Use Implicit Return <br>
+        const double = num => num * 2; // Simple, so implicit return works <br>
+      </p>
+      <img src="./images/explicit return to the setMethod.png" alt="">
+
+      <h2 id="CallBackfnc">CallBack fnc</h2>
+      <img style="width: 100%" src="./images/callbackfnc (1).webp" alt="">
+      <img style="width: 100%" src="./images/callbackfnc (2).webp" alt="">
+      <img style="width: 100%" src="./images/callbackfnc (3).webp" alt="">
+      <img style="width: 100%" src="./images/callbackfnc (4).webp" alt="">
+      <img style="width: 100%" src="./images/callbackfnc (5).webp" alt="">
+      <img style="width: 100%" src="./images/callbackfnc (6).webp" alt="">
       
+
+
+      <h2 id="Firstclassfunction">First class function</h2>
+      <img style="width: 100%" src="./images/fistclassfnc (1).webp" alt="">
+      <img style="width: 100%" src="./images/fistclassfnc (2).webp" alt="">
+      <img style="width: 100%" src="./images/fistclassfnc (3).webp" alt="">
+
+      <h2 id="Higherorderfnc">Higher order fnc </h2>
+      <img style="width: 100%" src="./images/higherorderhnc (1).webp" alt="">
+      <img style="width: 100%" src="./images/higherorderhnc (2).webp" alt="">
+      <img style="width: 100%" src="./images/higherorderhnc (3).webp" alt="">
+      <img style="width: 100%" src="./images/higherorderhnc (4).webp" alt="">
+      <img style="width: 100%" src="./images/higherorderhnc (5).webp" alt="">
+
+      <h2 id="Constructor">Constructor</h2>
+      <img style="width: 100%" src="./images/constructor (1).webp" alt="">
+      <img style="width: 100%" src="./images/constructor (2).webp" alt="">
+      <img style="width: 100%" src="./images/constructor (3).webp" alt="">
+      <img style="width: 100%" src="./images/constructor (4).webp" alt="">
+      <img style="width: 100%" src="./images/constructor (5).webp" alt="">
+      <img style="width: 100%" src="./images/constructor (6).webp" alt="">
+
+      <h2 id="PureImpurefnc">Pure Impure fnc</h2>
+      <img src="./images/pureimpurefnc (1).webp" alt="">
+      <img src="./images/pureimpurefnc (2).webp" alt="">
+      <img src="./images/pureimpurefnc (3).webp" alt="">
+      <img src="./images/pureimpurefnc (4).webp" alt="">
+      <img src="./images/pureimpurefnc (5).webp" alt="">
+      
+
       <h2 id="Array">Array</h2>
       <img style="width: 100%" src="./images/array1.webp" alt="">
       <img style="width: 100%" src="./images/array2.webp" alt="">
@@ -216,28 +302,12 @@
       <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (6).webp" alt="">
   
       
-      <h2 id="CallBackfnc">CallBack fnc</h2>
-      <img style="width: 100%" src="./images/callbackfnc (1).webp" alt="">
-      <img style="width: 100%" src="./images/callbackfnc (2).webp" alt="">
-      <img style="width: 100%" src="./images/callbackfnc (3).webp" alt="">
-      <img style="width: 100%" src="./images/callbackfnc (4).webp" alt="">
-      <img style="width: 100%" src="./images/callbackfnc (5).webp" alt="">
-      <img style="width: 100%" src="./images/callbackfnc (6).webp" alt="">
+      
       
         
-      <h2 id="Firstclassfunction">First class function</h2>
-      <img style="width: 100%" src="./images/fistclassfnc (1).webp" alt="">
-      <img style="width: 100%" src="./images/fistclassfnc (2).webp" alt="">
-      <img style="width: 100%" src="./images/fistclassfnc (3).webp" alt="">
+      
   
   
-      <h2 id="Arrowfunction">Arrow function</h2>
-      <img style="width: 100%" src="./images/arrowfnc (1).webp" alt="">
-      <img style="width: 100%" src="./images/arrowfnc (2).webp" alt="">
-      <img style="width: 100%" src="./images/arrowfnc (3).webp" alt="">
-      <img style="width: 100%" src="./images/arrowfnc (4).webp" alt="">
-      <img style="width: 100%" src="./images/arrowfnc (5).webp" alt="">
-      <img style="width: 100%" src="./images/arrowfnc (6).webp" alt="">
 
       
       <h2 id="howarraysaremadebehindthescenes">how arrays are made behind the scenes</h2>
@@ -255,21 +325,10 @@
       <img style="width: 100%" src="./images/Howtodeleteobjectprop (3).webp" alt="">
   
   
-      <h2 id="Higherorderfnc">Higher order fnc </h2>
-      <img style="width: 100%" src="./images/higherorderhnc (1).webp" alt="">
-      <img style="width: 100%" src="./images/higherorderhnc (2).webp" alt="">
-      <img style="width: 100%" src="./images/higherorderhnc (3).webp" alt="">
-      <img style="width: 100%" src="./images/higherorderhnc (4).webp" alt="">
-      <img style="width: 100%" src="./images/higherorderhnc (5).webp" alt="">
+      
 
 
-      <h2 id="Constructor">Constructor</h2>
-      <img style="width: 100%" src="./images/constructor (1).webp" alt="">
-      <img style="width: 100%" src="./images/constructor (2).webp" alt="">
-      <img style="width: 100%" src="./images/constructor (3).webp" alt="">
-      <img style="width: 100%" src="./images/constructor (4).webp" alt="">
-      <img style="width: 100%" src="./images/constructor (5).webp" alt="">
-      <img style="width: 100%" src="./images/constructor (6).webp" alt="">
+      
   
   
       <h2 id="Newkeyword">New keyword</h2>
@@ -315,12 +374,7 @@
       <img style="width: 100%" src="./images/callapplybind (4).webp" alt="">   
       
       
-      <h2 id="PureImpurefnc">Pure Impure fnc</h2>
-      <img src="./images/pureimpurefnc (1).webp" alt="">
-      <img src="./images/pureimpurefnc (2).webp" alt="">
-      <img src="./images/pureimpurefnc (3).webp" alt="">
-      <img src="./images/pureimpurefnc (4).webp" alt="">
-      <img src="./images/pureimpurefnc (5).webp" alt="">
+      
       
       
       
