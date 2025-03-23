@@ -1,224 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body >
-  <div class="ball"></div>
-  <div class="home"><a href="../index.html"><i class="ri-home-line"></i></a></div>
-  <div class="top"> <a href="#top"><i class="ri-arrow-up-line"></i></a></div>
-  <div class="main">
-
-    <nav><h1 style="text-align: center;">CSS</h1></nav>
-
-    <div  id="top" class="contentTable">
-
-      <a class="contentList" href="#Introduction">Introduction</a>
-      <a class="contentList" href="#CSSTypes">CSS Types</a>
-      <a class="contentList" href="#content19">CSS Combinators</a>
-      <a class="contentList" href="#OverflowCSSProperty">Overflow CSS Property</a>
-      <a class="contentList" href="#CSSboilerplate">CSS boilerplate</a>
-      <a class="contentList" href="#elementatthecenter">How to set an element at the center of webpage</a>
-      <a class="contentList" href="#Nouseofpositionabsoluteandfixedwithdisplayflex">No use of position absolute  and fixed with display flex</a>
-      <a class="contentList" href="#BasicNavCSS">Basic Nav CSS</a>
-      <a class="contentList" href="#UpperCasingofText">Upper Casing of Text</a>
-      <a class="contentList" href="#samecssproperty">same css property</a>
-      <a class="contentList" href="#PositionProperty">Position Property</a>
-      <a class="contentList" href="#content011">Z index</a>
-      <a class="contentList" href="#AbsoluteorFixedpositionedElements">Absolute or Fixed positioned Elements</a>
-      <a class="contentList" href="#content12">Setting Icons Font Size</a>
-      <a class="contentList" href="#content13">Image covering area while using img tag</a>
-      <a class="contentList" href="#content14">We can show an image by two ways</a>
-      <a class="contentList" href="#Keypointsforresponsivewebapplication">Key points for responsive web application</a>
-      <a class="contentList" href="#content17">Top margin of first child colapse with the top margin of parent divand bottom margin colapse for the last child</a>
-      <a class="contentList" href="#content18">background Blur</a>
-
-
-      
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="ball"></div>
+    <div class="home">
+      <a href="../index.html"><i class="ri-home-line"></i></a>
     </div>
+    <div class="top">
+      <a href="#top"><i class="ri-arrow-up-line"></i></a>
+    </div>
+    <div class="main">
+      <nav><h1 style="text-align: center">CSS</h1></nav>
 
-    <h1 style="padding: 0 1rem; "><a style="color: #ee5b00;" href="https://devdocs.io/css/">Usefull Document</a></h1>
-    
-        <h2 id="Introduction">Introduction</h2>
-            
-             <p> CSS stands for Cascading style sheets is used to style HTML documents. It is used to describe how the html elements will look on the screen.
-              
-              <em>The flow of CSS implementation is from the top to the bottom of CSS file.</em>
-              
-              <em>For the absolute positioned elements, the element which is whritten in the lower end of the html file is stacked upper in the web page.</em>
-              <em>The html elements have no background color by default.</em> </p>
-            
-        
-        <h2 id="CSSTypes">CSS Types</h2>
-            
-              <p> Inline CSS <br>
-                    using style tag. Ex- &lt;body style="background-color: #eaf6f6;" &gt; <br>
-                    inline css has more priority than internal css.
-                    Internal CSS <br>
-                    usint style element.<br> Ex-
-                     &lt;style media="screen"&gt; <br>
-                        body{ <br>
-                          background-color: #eaf6f6; <br>
-                        } <br>
-                     &lt;/style&gt; 
-              </p>
+      <div id="top" class="contentTable">
+        <a class="contentList" href="#Introduction">Introduction</a>
+        <a class="contentList" href="#CSSTypes">CSS Types</a>
+        <a class="contentList" href="#content019">CSS Combinators</a>
+        <a class="contentList" href="#OverflowCSSProperty"
+          >Overflow CSS Property</a
+        >
+        <a class="contentList" href="#CSSboilerplate">CSS boilerplate</a>
+        <a class="contentList" href="#elementatthecenter"
+          >How to set an element at the center of webpage</a
+        >
+        <a
+          class="contentList"
+          href="#Nouseofpositionabsoluteandfixedwithdisplayflex"
+          >No use of position absolute and fixed with display flex</a
+        >
+        <a class="contentList" href="#BasicNavCSS">Basic Nav CSS</a>
+        <a class="contentList" href="#UpperCasingofText"
+          >Upper Casing of Text</a
+        >
+        <a class="contentList" href="#samecssproperty">same css property</a>
+        <a class="contentList" href="#PositionProperty">Position Property</a>
+        <a class="contentList" href="#content011">Z index</a>
+        <a class="contentList" href="#AbsoluteorFixedpositionedElements"
+          >Absolute or Fixed positioned Elements</a
+        >
+        <a class="contentList" href="#content12">Setting Icons Font Size</a>
+        <a class="contentList" href="#content13"
+          >Image covering area while using img tag</a
+        >
+        <a class="contentList" href="#content14"
+          >We can show an image by two ways</a
+        >
+        <a class="contentList" href="#Keypointsforresponsivewebapplication"
+          >Key points for responsive web application</a
+        >
+        <a class="contentList" href="#content17"
+          >Top margin of first child colapse with the top margin of parent
+          divand bottom margin colapse for the last child</a
+        >
+        <a class="contentList" href="#content18">background Blur</a>
+        <a class="contentList" href="#content19">clicking or pressing effect using active tailwind css class</a>
+      </div>
 
-              <h2 id="content19"><a href="https://www.w3schools.com/Css/css_combinators.asp">CSS Combinators</a></h2>
-                
+      <h1 style="padding: 0 1rem">
+        <a style="color: #ee5b00" href="https://devdocs.io/css/"
+          >Usefull Document</a
+        >
+      </h1>
 
-            
-        
-              <h2 id="OverflowCSSProperty">Overflow CSS Property</h2>
-              <img src="./images/overflowcssproperty (1).webp" alt="">
-              <img style="width: 100%" src="./images/overflowcssproperty (2).webp" alt="">
-        
-            <h2 id="CSSboilerplate">CSS boilerplate</h2>
-            <img style="width: 100%" src="./images/image1.webp" alt="">
-        
+      <h2 id="Introduction">Introduction</h2>
 
-        
-            <h2 id="elementatthecenter">How to set an element at the center of webpage</h2>
-            <img style="width: 100%" src="./images/image2.webp" alt="">
-        
-        <h2 id="Nouseofpositionabsoluteandfixedwithdisplayflex">No use of position absolute  and fixed with display flex</h2>
-            <img style="width: 100%" src="./images/NoabsoluteWithflex.webp" alt="">
-        
-        <h2 id="BasicNavCSS">Basic Nav CSS</h2>
-          <img style="width: 100%" src="./images/nav.webp" alt="">
-      
+      <p>
+        CSS stands for Cascading style sheets is used to style HTML documents.
+        It is used to describe how the html elements will look on the screen.
+
+        <em
+          >The flow of CSS implementation is from the top to the bottom of CSS
+          file.</em
+        >
+
+        <em
+          >For the absolute positioned elements, the element which is whritten
+          in the lower end of the html file is stacked upper in the web
+          page.</em
+        >
+        <em>The html elements have no background color by default.</em>
+      </p>
+
+      <h2 id="CSSTypes">CSS Types</h2>
+
+      <p>
+        Inline CSS <br />
+        using style tag. Ex- &lt;body style="background-color: #eaf6f6;" &gt;
+        <br />
+        inline css has more priority than internal css. Internal CSS <br />
+        usint style element.<br />
+        Ex- &lt;style media="screen"&gt; <br />
+        body{ <br />
+        background-color: #eaf6f6; <br />
+        } <br />
+        &lt;/style&gt;
+      </p>
+
+      <h2 id="content019">
+        <a href="https://www.w3schools.com/Css/css_combinators.asp"
+          >CSS Combinators</a
+        >
+      </h2>
+
+      <h2 id="OverflowCSSProperty">Overflow CSS Property</h2>
+      <img src="./images/overflowcssproperty (1).webp" alt="" />
+      <img
+        style="width: 100%"
+        src="./images/overflowcssproperty (2).webp"
+        alt=""
+      />
+
+      <h2 id="CSSboilerplate">CSS boilerplate</h2>
+      <img style="width: 100%" src="./images/image1.webp" alt="" />
+
+      <h2 id="elementatthecenter">
+        How to set an element at the center of webpage
+      </h2>
+      <img style="width: 100%" src="./images/image2.webp" alt="" />
+
+      <h2 id="Nouseofpositionabsoluteandfixedwithdisplayflex">
+        No use of position absolute and fixed with display flex
+      </h2>
+      <img style="width: 100%" src="./images/NoabsoluteWithflex.webp" alt="" />
+
+      <h2 id="BasicNavCSS">Basic Nav CSS</h2>
+      <img style="width: 100%" src="./images/nav.webp" alt="" />
+
       <h2 id="UpperCasingofText">Upper Casing of Text</h2>
-        <img style="width: 100%" src="./images/uppercase.webp" alt="">
+      <img style="width: 100%" src="./images/uppercase.webp" alt="" />
 
-        <h2 id="samecssproperty">When we want to use the same css property(like translate) to an element with different value but we don't want to overwrite it</h2>
-        <p>ex-</p>
-      <img src="./images/nooverwrite.webp" alt="">
+      <h2 id="samecssproperty">
+        When we want to use the same css property(like translate) to an element
+        with different value but we don't want to overwrite it
+      </h2>
+      <p>ex-</p>
+      <img src="./images/nooverwrite.webp" alt="" />
 
-      
       <h2 id="PositionProperty">Position Property</h2>
-        <img style="width: 100%" src="./images/position.webp" alt="">
+      <img style="width: 100%" src="./images/position.webp" alt="" />
 
-      
-        <h2 class="noth2" >static</h2>
-<p>The element is positioned according to the Normal Flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+      <h2 class="noth2">static</h2>
+      <p>
+        The element is positioned according to the Normal Flow of the document.
+        The top, right, bottom, left, and z-index properties have no effect.
+        This is the default value.
+      </p>
 
-<h2 class="noth2">
-relative</h2>
+      <h2 class="noth2">relative</h2>
 
-<p>The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static. <br><br>
+      <p>
+        The element is positioned according to the normal flow of the document,
+        and then offset relative to itself based on the values of top, right,
+        bottom, and left. The offset does not affect the position of any other
+        elements; thus, the space given for the element in the page layout is
+        the same as if position were static. <br /><br />
 
-This value creates a new stacking context when the value of z-index is not auto. Its effect on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.</p>
+        This value creates a new stacking context when the value of z-index is
+        not auto. Its effect on table-*-group, table-row, table-column,
+        table-cell, and table-caption elements is undefined.
+      </p>
 
-<h2 class="noth2">absolute</h2>
-<p>The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its closest positioned ancestor (if any) or to the initial containing block. Its final position is determined by the values of top, right, bottom, and left. <br><br>
+      <h2 class="noth2">absolute</h2>
+      <p>
+        The element is removed from the normal document flow, and no space is
+        created for the element in the page layout. The element is positioned
+        relative to its closest positioned ancestor (if any) or to the initial
+        containing block. Its final position is determined by the values of top,
+        right, bottom, and left. <br /><br />
 
-This value creates a new stacking context when the value of z-index is not auto. The margins of absolutely positioned boxes do not collapse with other margins.</p>
+        This value creates a new stacking context when the value of z-index is
+        not auto. The margins of absolutely positioned boxes do not collapse
+        with other margins.
+      </p>
 
-<h2 class="noth2">fixed</h2>
-<p>
-The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its initial containing block, which is the viewport in the case of visual media. Its final position is determined by the values of top, right, bottom, and left. <br><br>
+      <h2 class="noth2">fixed</h2>
+      <p>
+        The element is removed from the normal document flow, and no space is
+        created for the element in the page layout. The element is positioned
+        relative to its initial containing block, which is the viewport in the
+        case of visual media. Its final position is determined by the values of
+        top, right, bottom, and left. <br /><br />
 
-This value always creates a new stacking context. In printed documents, the element is placed in the same position on every page.</p>
+        This value always creates a new stacking context. In printed documents,
+        the element is placed in the same position on every page.
+      </p>
 
-<h2 class="noth2">sticky</h2>
-<p>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements. <br>
+      <h2 class="noth2">sticky</h2>
+      <p>
+        The element is positioned according to the normal flow of the document,
+        and then offset relative to its nearest scrolling ancestor and
+        containing block (nearest block-level ancestor), including table-related
+        elements, based on the values of top, right, bottom, and left. The
+        offset does not affect the position of any other elements. <br />
 
-This value always creates a new stacking context. Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the nearest actually scrolling ancestor.</p>
+        This value always creates a new stacking context. Note that a sticky
+        element "sticks" to its nearest ancestor that has a "scrolling
+        mechanism" (created when overflow is hidden, scroll, auto, or overlay),
+        even if that ancestor isn't the nearest actually scrolling ancestor.
+      </p>
 
-        <img style="width: 100%" src="./images/position1.webp" alt="">
-        <img style="width: 100%" src="./images/position2.webp" alt="">
+      <img style="width: 100%" src="./images/position1.webp" alt="" />
+      <img style="width: 100%" src="./images/position2.webp" alt="" />
 
-        <h2 id="content011"> Z index</h2>
-        <img src="./images/11 z-index.webp" alt="">
-        <img src="./images/NegativeZIndex (1).webp" alt="">
-        <img src="./images/NegativeZIndex (2).webp" alt="">
-        <img src="./images/NegativeZIndex (3).webp" alt="">
-        <img src="./images/NegativeZIndex (4).webp" alt="">
-        <img src="./images/NegativeZIndex (5).webp" alt="">
-      
-      
-        <h2 id="AbsoluteorFixedpositionedElements">Absolute or Fixed positioned Elements:</h2>
-        <p>1. These two elements moved out of the normal document flow and shift at the top left position(keep in note that it is not ocupying any space there, you can think as if it is floating over there above the webpage)  and behave like aline elements having no width and height. </p>
-        <p>2. Absolutely or Fixed positioned elements are moved from the normal document flow that's why <em> they lost the space,<strong> if the element is block level then it behaves like an inlign element having no width and heigth occupying only the content space</strong></em> </p>
+      <h2 id="content011">Z index</h2>
+      <img src="./images/11 z-index.webp" alt="" />
+      <img src="./images/NegativeZIndex (1).webp" alt="" />
+      <img src="./images/NegativeZIndex (2).webp" alt="" />
+      <img src="./images/NegativeZIndex (3).webp" alt="" />
+      <img src="./images/NegativeZIndex (4).webp" alt="" />
+      <img src="./images/NegativeZIndex (5).webp" alt="" />
 
-        <h2 id="content12">Setting Icons Font size</h2>
-        <img style="width: 100%" src="./images/iconfont.webp" alt="">
-      
+      <h2 id="AbsoluteorFixedpositionedElements">
+        Absolute or Fixed positioned Elements:
+      </h2>
+      <p>
+        1. These two elements moved out of the normal document flow and shift at
+        the top left position(keep in note that it is not ocupying any space
+        there, you can think as if it is floating over there above the webpage)
+        and behave like aline elements having no width and height.
+      </p>
+      <p>
+        2. Absolutely or Fixed positioned elements are moved from the normal
+        document flow that's why
+        <em>
+          they lost the space,<strong>
+            if the element is block level then it behaves like an inlign element
+            having no width and heigth occupying only the content space</strong
+          ></em
+        >
+      </p>
+
+      <h2 id="content12">Setting Icons Font size</h2>
+      <img style="width: 100%" src="./images/iconfont.webp" alt="" />
+
       <h2 id="content13">Image covering area while usig img tag</h2>
-        <img style="width: 100%" src="./images/imagemanipulationwhileusingimagetag.webp" alt="">
-      
-      <h2 id="content14">We can show an image by two ways </h2>
-      <p>1. By using img tag and object-fit, object position properties are used here to adjust image. <br><br> 2. By using div element with background-image propery and background-size, background-position are used here. </p>
-      <img style="width: 100%" src="./images/divbackgroundimage.webp" alt=""> 
- 
-       
+      <img
+        style="width: 100%"
+        src="./images/imagemanipulationwhileusingimagetag.webp"
+        alt=""
+      />
 
-          
-    
-    
-      
-      
+      <h2 id="content14">We can show an image by two ways</h2>
+      <p>
+        1. By using img tag and object-fit, object position properties are used
+        here to adjust image. <br /><br />
+        2. By using div element with background-image propery and
+        background-size, background-position are used here.
+      </p>
+      <img style="width: 100%" src="./images/divbackgroundimage.webp" alt="" />
 
-     
-      
+      <h2 id="Keypointsforresponsivewebapplication">
+        Key points for responsive web application
+      </h2>
+      <img src="./images/responsiveWeb (1).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (4).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (5).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (6).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (7).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (8).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (9).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (10).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (11).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (12).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (13).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (14).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (15).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (16).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (17).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (18).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (19).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (20).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (21).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (22).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (23).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (24).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (25).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (26).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (27).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (28).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (29).webp" alt="" />
+      <img style="width: 100%" src="./images/responsiveWeb (30).webp" alt="" />
 
-      <h2 id="Keypointsforresponsivewebapplication">Key points for responsive web application</h2>
-      <img src="./images/responsiveWeb (1).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (4).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (5).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (6).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (7).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (8).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (9).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (10).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (11).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (12).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (13).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (14).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (15).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (16).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (17).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (18).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (19).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (20).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (21).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (22).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (23).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (24).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (25).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (26).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (27).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (28).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (29).webp" alt="">
-      <img style="width: 100%;" src="./images/responsiveWeb (30).webp" alt="">
-      
-       <h2 id="content17">Top margin of first child colapse with the top margin of parent divand bottom margin colapse for the last child</h2>
-       <img src="./images/topmargincolapseforthefirsandthelastchild.png" alt="">
-      
-       <h2 id="content18">background Blur</h2>
-       <img src="./images/18 backgroundBlur.webp" alt="">
-      
+      <h2 id="content17">
+        Top margin of first child colapse with the top margin of parent divand
+        bottom margin colapse for the last child
+      </h2>
+      <img
+        src="./images/topmargincolapseforthefirsandthelastchild.png"
+        alt=""
+      />
+
+      <h2 id="content18">background Blur</h2>
+      <img src="./images/18 backgroundBlur.webp" alt="" />
+
+      <h2 id="content19">clicking or pressing effect using active tailwind css class</h2>
+      <img src="./images/clicking or pressing effect using active tailwind css class.webp" alt="">
+
+
+
+
+
+
+
       <div class="end"><h3>END PAGE</h3></div>
-    
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- gsap min js -->
+    <!-- search gsap cdn on browser and copy the link and paste it here -->
 
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- gsap min js -->
-   <!-- search gsap cdn on browser and copy the link and paste it here -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- gsap scrollTrigger min js -->
-  <!-- search gsap cdn on browser and look for scrollTrigger may be at 2nd last you will get --> 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- gsap scrollTrigger min js -->
+    <!-- search gsap cdn on browser and look for scrollTrigger may be at 2nd last you will get -->
     <script src="../srcipt.js"></script>
-</body>
+  </body>
 </html>
