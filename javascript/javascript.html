@@ -1,495 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-    <link rel="stylesheet" href="../style.css">
-    
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css">
+
 </head>
+
 <body>
   <div class="ball"></div>
   <div class="home"><a href="../index.html"><i class="ri-home-line"></i></a></div>
-    <div class="top"> <a href="#top"><i class="ri-arrow-up-line"></i></a></div>
-    <div class="main">
+  <div class="top"> <a href="#top"><i class="ri-arrow-up-line"></i></a></div>
+  <div class="main">
 
-      <nav><h1 style="text-align: center;">Javascript</h1></nav>
+    <nav>
+      <h1 style="text-align: center;">Javascript</h1>
+    </nav>
 
-      <div id="top" class="contentTable">
-        
-        <a class="contentList" href="#Wordvskeyword">Word vs keyword</a>
-        <a class="contentList" href="#varconstlet">var const let</a>
-        <a class="contentList" href="#hoisting">hoisting</a>
-        <a class="contentList" href="#Primitiveandreferencetype">Primitive and reference type</a>
-        <a class="contentList" href="#ifelseelseif">if else, else if</a>
-        <a class="contentList" href="#forloop">loops</a>
-        <a class="contentList" href="#content48">indexOf()</a>
-        <a class="contentList" href="#content47">filter</a>
-        <a class="contentList" href="#content49">map</a>
-        
-        <a class="contentList" href="#Functions">Functions</a>
-        <a class="contentList" href="#Arrowfunction">Arrow function</a>
-        <a class="contentList" href="#CallBackfnc">CallBack fnc</a>
-        <a class="contentList" href="#Firstclassfunction">First class function</a>
-        <a class="contentList" href="#Higherorderfnc">Higher order fnc</a>
-        <a class="contentList" href="#Constructor">Constructor</a>
-        <a class="contentList" href="#PureImpurefnc">Pure Impure fnc</a>
-        <a class="contentList" href="#Array">Array</a>
-        <a class="contentList" href="#Object">Object</a>
-        <a class="contentList" href="#JavascriptVersions">Javascript Versions</a>
-        <a class="contentList" href="#DifferencedifferenceBetweenvarletconst">Difference difference Between var let const</a>
-        <a class="contentList" href="#Stack">Stack</a>
-        <a class="contentList" href="#Heapmemory">Heap memory</a>
-        <a class="contentList" href="#ExecutionContext">Execution Context</a>
-        <a class="contentList" href="#Howtocopyreferencevalues">How to copy reference values</a>
-        <a class="contentList" href="#content17">Truthy of Falsy</a>
-        <a class="contentList" href="#howarraysaremadebehindthescenes">how arrays are made behind the scenes</a>
-        <a class="contentList" href="#Howtodeleteobjectprop">How to delete object prop</a>
-        <a class="contentList" href="#Newkeyword">New keyword</a>
-        <a class="contentList" href="#IIFI">IIFI</a>
-        <a class="contentList" href="#PrototypalInheritence">Prototypal Inheritence</a>
-        <a class="contentList" href="#Thiskeyword">This keyword</a>
-        <a class="contentList" href="#CallApplyBind">Call Apply Bind</a>
-        <a class="contentList" href="#content37">DOM</a>
-        <a class="contentList" href="#Dommanipulation">Dom manipulation</a>
-        <a class="contentList" href="#content36">creating An Element</a>
-        <a class="contentList" href="#content38">adding A Created Element To BodyAs A Child</a>
-        <a class="contentList" href="#content41">adding A Class To An Element</a>
-        <a class="contentList" href="#content42">setting Css Property To A Created Element In Javascript</a>
-        <a class="contentList" href="#content43">removing A Created Element</a>
-        <a class="contentList" href="#content34">Getting an element location in javascript</a>
-        <a class="contentList" href="#content35">mousemove event & the MouseEvent and the details about the mouse</a>
-        <a class="contentList" href="#content33">Math.abs()</a>
-        <a class="contentList" href="#content39">setting background color with dynamic values</a>
-        <a class="contentList" href="#BubbleGame">Bubble Game</a>
-        <a class="contentList" href="#content44">Sync And Async Code</a>
-        <a class="contentList" href="#content45">Promises</a>
-        <a class="contentList" href="#content46">Async Await</a>
-    
-      </div>
-    
-      <h2 id="Wordvskeyword">Word vs keyword </h2>
-      <p>1. Word is a word which does not has any meaning in javascript. ex- chacha, ashish <br>
-        2. keyword is a word which has any meaning in javascript. ex- for, if, else, let
-      </p>
-            
-            
-      <h2 id="varconstlet">var const let</h2>
-      <p>1. var is used for those data storing containers in which data can be changed. <br>
-         2. const is used for those data storing containers in which data can not be changed. <br>
-         3. let similar to var.
-      </p>
-            
-            
-      <h2 id="hoisting">hoisting</h2>
-      <p>
-          1. hoisting- variable and functions are hoisted which means there declaration is moved on the top of code. <br>
-          2. If the variable is used before its initilisation the program gives an undefined(value exits but we dont know about it) value while in other progrmming languages it gives not defined(when such value doesn't exit) error. 
-      </p>
-            
-            
-      <h2 id="Primitiveandreferencetype">Primitive and reference type</h2>
-      <img style="width: 100%" src="./images/primitivereference.webp" alt="">
-      <img style="width: 100%" style="width: 100%" src="./images/pm1.webp" alt="">
-      <img style="width: 100%" style="width: 100%" src="./images/pm2.webp" alt="">
-      <img style="width: 100%" style="width: 100%" src="./images/pm3.webp" alt="">
-      <img style="width: 100%" style="width: 100%" src="./images/pm4.webp" alt="">
-                
-            
-            
-      <h2 id="ifelseelseif">if else, else if</h2>
-      <p>1. In if else, the are two possible values in 'if' which are true or false, if value is true then 'if' part will run otherwise else part will run.</p>
-      <img style="width: 100%" src="./images/ifelse1.webp" alt="">
-      <p>2. In else if, the only one part run same as 'if else'.</p>
-      <img style="width: 100%" src="./images/ifelse2.webp" alt="">
-            
-      
+    <div id="top" class="contentTable">
 
-      <h2 id="forloop">loops</h2>
-      <img style="width: 100%" src="./images/forloop1.webp" alt="">
-      <img style="width: 100%" src="./images/forloop2.webp" alt="">
-      <img style="width: 100%" src="./images/forloop3.webp" alt="">
-      <img style="width: 100%" src="./images/forloop4.webp" alt="">
-      <img style="width: 100%" src="./images/forloop5.webp" alt="">
-      <img src="./images/whileloop.webp" alt="">
-      <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (1).webp" alt="">
-      <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (2).webp" alt="">
-      <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (3).webp" alt="">
-      <img src="./images/forEach (1).webp" alt="">
-      <img src="./images/forEach (2).webp" alt="">
-      <img src="./images/forEach (3).webp" alt="">
-      <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (4).webp" alt="">
-      <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (5).webp" alt="">
-      <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (6).webp" alt="">
+      <a class="contentList" href="#Wordvskeyword">Word vs keyword</a>
+      <a class="contentList" href="#varconstlet">var const let</a>
+      <a class="contentList" href="#hoisting">hoisting</a>
+      <a class="contentList" href="#Primitiveandreferencetype">Primitive and reference type</a>
+      <a class="contentList" href="#ifelseelseif">if else, else if</a>
+      <a class="contentList" href="#forloop">loops</a>
+      <a class="contentList" href="#content48">indexOf()</a>
+      <a class="contentList" href="#content47">filter</a>
+      <a class="contentList" href="#content49">map</a>
 
-      <h2 id="content48">IndexOf()</h2>
-      <img src="./images/indexOf (1).webp" alt="">
-      <img src="./images/indexOf (2).webp" alt="">
+      <a class="contentList" href="#Functions">Functions</a>
+      <a class="contentList" href="#Arrowfunction">Arrow function</a>
+      <a class="contentList" href="#CallBackfnc">CallBack fnc</a>
+      <a class="contentList" href="#Firstclassfunction">First class function</a>
+      <a class="contentList" href="#Higherorderfnc">Higher order fnc</a>
+      <a class="contentList" href="#Constructor">Constructor</a>
+      <a class="contentList" href="#PureImpurefnc">Pure Impure fnc</a>
+      <a class="contentList" href="#Array">Array</a>
+      <a class="contentList" href="#Object">Object</a>
+      <a class="contentList" href="#JavascriptVersions">Javascript Versions</a>
+      <a class="contentList" href="#DifferencedifferenceBetweenvarletconst">Difference difference Between var let
+        const</a>
+      <a class="contentList" href="#Stack">Stack</a>
+      <a class="contentList" href="#Heapmemory">Heap memory</a>
+      <a class="contentList" href="#ExecutionContext">Execution Context</a>
+      <a class="contentList" href="#Howtocopyreferencevalues">How to copy reference values</a>
+      <a class="contentList" href="#content17">Truthy of Falsy</a>
+      <a class="contentList" href="#howarraysaremadebehindthescenes">how arrays are made behind the scenes</a>
+      <a class="contentList" href="#Howtodeleteobjectprop">How to delete object prop</a>
+      <a class="contentList" href="#Newkeyword">New keyword</a>
+      <a class="contentList" href="#IIFI">IIFI</a>
+      <a class="contentList" href="#PrototypalInheritence">Prototypal Inheritence</a>
+      <a class="contentList" href="#Thiskeyword">This keyword</a>
+      <a class="contentList" href="#CallApplyBind">Call Apply Bind</a>
+      <a class="contentList" href="#content37">DOM</a>
+      <a class="contentList" href="#Dommanipulation">Dom manipulation</a>
+      <a class="contentList" href="#content36">creating An Element</a>
+      <a class="contentList" href="#content38">adding A Created Element To BodyAs A Child</a>
+      <a class="contentList" href="#content41">adding A Class To An Element</a>
+      <a class="contentList" href="#content42">setting Css Property To A Created Element In Javascript</a>
+      <a class="contentList" href="#content43">removing A Created Element</a>
+      <a class="contentList" href="#content34">Getting an element location in javascript</a>
+      <a class="contentList" href="#content35">mousemove event & the MouseEvent and the details about the mouse</a>
+      <a class="contentList" href="#content33">Math.abs()</a>
+      <a class="contentList" href="#content39">setting background color with dynamic values</a>
+      <a class="contentList" href="#BubbleGame">Bubble Game</a>
+      <a class="contentList" href="#content44">Sync And Async Code</a>
+      <a class="contentList" href="#content45">Promises</a>
+      <a class="contentList" href="#content46">Async Await</a>
 
-      <h2 id="content47">filter</h2>
-      <img src="./images/filter (1).webp" alt="">
-      <img src="./images/filter (2).webp" alt="">
-      <img src="./images/filter (3).webp" alt="">
-      <img src="./images/filter (4).webp" alt="">
-      <img src="./images/filter (5).webp" alt="">
-      <img src="./images/filter (6).webp" alt="">
-      <img src="./images/filter (7).webp" alt="">
-      <img src="./images/filter (8).webp" alt="">
+    </div>
 
-      <h2 id="content49">map</h2>
-      <img src="./images/map (1).webp" alt="">
-      <img src="./images/map (2).webp" alt="">
-      
-      <h2 id="Functions">Functions</h2>
-      <img style="width: 100%" src="./images/function1.webp" alt="">
-      <img style="width: 100%" src="./images/function2.webp" alt="">
-      <img style="width: 100%" src="./images/function5.webp" alt="">
-      <img style="width: 100%" src="./images/function6.webp" alt="">
-      <img style="width: 100%" src="./images/function7.webp" alt="">
-      <img style="width: 100%" src="./images/function8.webp" alt="">
-      <img style="width: 100%" src="./images/function9.webp" alt="">
-      <img style="width: 100%" src="./images/function10.webp" alt="">
-      <img src="./images/function (1).webp" alt="">
-      <img src="./images/function (2).webp" alt="">
-      <img src="./images/function (3).webp" alt="">
-      <img src="./images/function (4).webp" alt="">
-      <img src="./images/function (5).webp" alt="">
-      <img src="./images/function (6).webp" alt="">
-      <img src="./images/function (7).webp" alt="">
-      <img src="./images/function (8).webp" alt="">
-      
-      <h2 id="Arrowfunction">Arrow function</h2>
-      <img style="width: 100%" src="./images/arrowfnc (1).webp" alt="">
-      <img style="width: 100%" src="./images/arrowfnc (2).webp" alt="">
-      <img style="width: 100%" src="./images/arrowfnc (3).webp" alt="">
-      <img style="width: 100%" src="./images/arrowfnc (4).webp" alt="">
-      <img style="width: 100%" src="./images/arrowfnc (5).webp" alt="">
-      <img style="width: 100%" src="./images/arrowfnc (6).webp" alt="">
-
-      <p>
-        Implicit vs. Explicit Return in JavaScript Arrow Functions <br>
-        In arrow functions, the way you return a value can differ based on syntax: <br> <br>
-        
-        1. Explicit Return ({} with return) <br>
-        Requires {} curly braces and an explicit return statement. <br>
-        Use this when you have multiple statements in the function. <br>
-        Example: <br>
-        const add = (a, b) => { <br>
-            return a + b;  // Explicitly returning a + b <br>
-        }; <br>
-        console.log(add(2, 3)); // Output: 5 <br>
-        Here, {} means you're using a function body, and you must use return to return a value. <br> <br>
-        2. Implicit Return (() without return) <br>
-        No {} means JavaScript automatically returns the result of the expression. <br>
-        Best for simple, single-expression functions. <br>
-        Example: <br>
-        const add = (a, b) => a + b; // Implicit return <br>
-        console.log(add(2, 3)); // Output: 5 <br>
-        or using (): <br> 
-        const multiply = (a, b) => ( <br>
-            a * b  // Implicitly returns the result <br>
-        ); <br>
-        console.log(multiply(3, 4)); // Output: 12 <br>
-        No need to write return explicitly. <br> <br>
-        Key Differences <br>
-        Feature	Explicit Return {}	Implicit Return () <br>
-        Uses {}	✅ Yes	❌ No <br>
-        Needs return	✅ Yes	❌ No (auto-returns) <br>
-        Handles multiple statements	✅ Yes	❌ No (only one expression) <br>
-        Good for complex logic?	✅ Yes	❌ No (better for one-liners) <br> <br>
-        When to Use What? <br>
-        ✅ Use explicit return ({} with return) if the function has multiple statements. <br>
-        ✅ Use implicit return (() without return) for simple one-liner expressions. <br> <br>
-        Example of When to Use Explicit Return <br>
-        const processNumber = (num) => { <br>
-            console.log("Processing:", num); // Side effect (logging) <br>
-            return num * 2;  // Explicit return needed <br>
-        }; <br> <br>
-        Example of When to Use Implicit Return <br>
-        const double = num => num * 2; // Simple, so implicit return works <br>
-      </p>
-      <img src="./images/explicit return to the setMethod.webp" alt="">
-
-      <h2 id="CallBackfnc">CallBack fnc</h2>
-      <img style="width: 100%" src="./images/callbackfnc (1).webp" alt="">
-      <img style="width: 100%" src="./images/callbackfnc (2).webp" alt="">
-      <img style="width: 100%" src="./images/callbackfnc (3).webp" alt="">
-      <img style="width: 100%" src="./images/callbackfnc (4).webp" alt="">
-      <img style="width: 100%" src="./images/callbackfnc (5).webp" alt="">
-      <img style="width: 100%" src="./images/callbackfnc (6).webp" alt="">
-      
+    <h2 id="Wordvskeyword">Word vs keyword </h2>
+    <p>1. Word is a word which does not has any meaning in javascript. ex- chacha, ashish <br>
+      2. keyword is a word which has any meaning in javascript. ex- for, if, else, let
+    </p>
 
 
-      <h2 id="Firstclassfunction">First class function</h2>
-      <img style="width: 100%" src="./images/fistclassfnc (1).webp" alt="">
-      <img style="width: 100%" src="./images/fistclassfnc (2).webp" alt="">
-      <img style="width: 100%" src="./images/fistclassfnc (3).webp" alt="">
+    <h2 id="varconstlet">var const let</h2>
+    <p>1. var is used for those data storing containers in which data can be changed. <br>
+      2. const is used for those data storing containers in which data can not be changed. <br>
+      3. let similar to var.
+    </p>
 
-      <h2 id="Higherorderfnc">Higher order fnc </h2>
-      <img style="width: 100%" src="./images/higherorderhnc (1).webp" alt="">
-      <img style="width: 100%" src="./images/higherorderhnc (2).webp" alt="">
-      <img style="width: 100%" src="./images/higherorderhnc (3).webp" alt="">
-      <img style="width: 100%" src="./images/higherorderhnc (4).webp" alt="">
-      <img style="width: 100%" src="./images/higherorderhnc (5).webp" alt="">
 
-      <h2 id="Constructor">Constructor</h2>
-      <img style="width: 100%" src="./images/constructor (1).webp" alt="">
-      <img style="width: 100%" src="./images/constructor (2).webp" alt="">
-      <img style="width: 100%" src="./images/constructor (3).webp" alt="">
-      <img style="width: 100%" src="./images/constructor (4).webp" alt="">
-      <img style="width: 100%" src="./images/constructor (5).webp" alt="">
-      <img style="width: 100%" src="./images/constructor (6).webp" alt="">
+    <h2 id="hoisting">hoisting</h2>
+    <p>
+      1. hoisting- variable and functions are hoisted which means there declaration is moved on the top of code. <br>
+      2. If the variable is used before its initilisation the program gives an undefined(value exits but we dont know
+      about it) value while in other progrmming languages it gives not defined(when such value doesn't exit) error.
+    </p>
 
-      <h2 id="PureImpurefnc">Pure Impure fnc</h2>
-      <img src="./images/pureimpurefnc (1).webp" alt="">
-      <img src="./images/pureimpurefnc (2).webp" alt="">
-      <img src="./images/pureimpurefnc (3).webp" alt="">
-      <img src="./images/pureimpurefnc (4).webp" alt="">
-      <img src="./images/pureimpurefnc (5).webp" alt="">
-      
 
-      <h2 id="Array">Array</h2>
-      <img style="width: 100%" src="./images/array1.webp" alt="">
-      <img style="width: 100%" src="./images/array2.webp" alt="">
-      <img style="width: 100%" src="./images/array3.webp" alt="">
-      <img style="width: 100%" src="./images/array4.webp" alt="">
-      <img style="width: 100%" src="./images/array5.webp" alt="">
-      <img style="width: 100%" src="./images/array6.webp" alt="">
-      <img style="width: 100%" src="./images/array7.webp" alt="">
-      <img style="width: 100%" src="./images/array8.webp" alt="">
-      <img src="./images/array.webp" alt="">
-  
-  
-      <h2 id="Object">Object</h2>
-      <img style="width: 100%" src="./images/object1.webp" alt="">
-      <img style="width: 100%" src="./images/object2.webp" alt="">
-      <img style="width: 100%" src="./images/object3.webp" alt="">
-      <img style="width: 100%" src="./images/object4.webp" alt="">
-      <img style="width: 100%" src="./images/object5.webp" alt="">
-      <img style="width: 100%" src="./images/object6.webp" alt="">
-      <img src="./images/object (1).webp" alt="">
-      <img src="./images/object (2).webp" alt="">
-      <img src="./images/object (3).webp" alt="">
-      <img src="./images/object (4).webp" alt="">
-      <img src="./images/object (5).webp" alt="">
-      <img src="./images/object (6).webp" alt="">
-      <img src="./images/object (7).webp" alt="">
-      <img src="./images/object (8).webp" alt="">
-      <img src="./images/object (9).webp" alt="">
-      <img src="./images/object (10).webp" alt="">
-      <img src="./images/object (11).webp" alt="">
-      <img src="./images/object (12).webp" alt="">
-      <img src="./images/object (13).webp" alt="">
+    <h2 id="Primitiveandreferencetype">Primitive and reference type</h2>
+    <img style="width: 100%" src="./images/primitivereference.webp" alt="">
+    <p>
+      1. Primitive type variables- Those variables whose value is copied to the parameter of function while passing as
+      an argument during function call.<br>
+      2. Reference type variables- Those variables whose address/reference is copied to the parameter of function while
+      passing as an argument during function call.
+    </p>
+    <img style="width: 100%" style="width: 100%" src="./images/pm1.webp" alt="">
+    <img style="width: 100%" style="width: 100%" src="./images/pm2.webp" alt="">
+    <img style="width: 100%" style="width: 100%" src="./images/pm3.webp" alt="">
+    <img style="width: 100%" style="width: 100%" src="./images/pm4.webp" alt="">
 
-      
-      
-      <h2 id="JavascriptVersions">Javascript Versions</h2>
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (1).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (2).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (3).webp" alt="">
-      
-      
-      <h2 id="DifferencedifferenceBetweenvarletconst">Difference difference Between var let const</h2>
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (4).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (5).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (6).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (7).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (8).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (9).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (10).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (11).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (12).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (13).webp" alt="">
-      <img style="width: 100%" src="./images/differenceBetweenvarletconst (14).webp" alt="">
-        
-        
-      
-      
-      
 
-      <h2 id="Stack">Stack</h2>
-      <img style="width: 100%" src="./images/stack.webp" alt="">   
-  
-      
-      <h2 id="Heapmemory">Heap memory</h2>
-      <img style="width: 100%" src="./images/heapmemory.webp" alt="">
-  
-      
-      <h2 id="ExecutionContext">Execution Context</h2>
-      <img style="width: 100%" src="./images/executioncontext (1).webp" alt="">
-      <img style="width: 100%" src="./images/executioncontext (2).webp" alt="">
-      <img style="width: 100%" src="./images/executioncontext (3).webp" alt="">
-      <img style="width: 100%" src="./images/executioncontext (4).webp" alt="">
-      <img style="width: 100%" src="./images/executioncontext (5).webp" alt="">
-      
-        
-      <h2 id="Howtocopyreferencevalues">How to copy reference values</h2>
-      <img style="width: 100%" src="./images/howtocopyreferencevalues (1).webp" alt="">
-      <img style="width: 100%" src="./images/howtocopyreferencevalues (2).webp" alt="">
-      <img style="width: 100%" src="./images/howtocopyreferencevalues (3).webp" alt="">
-      <img style="width: 100%" src="./images/howtocopyreferencevalues (4).webp" alt="">
-  
-  
-      <h2 id="content17">Truthy of Falsy</h2>
-      <img style="width: 100%" src="./images/17 truthyorFalsy (1).webp" alt="">
-      <img style="width: 100%" src="./images/17 truthyorFalsy (2).webp" alt="">
-        
-        
-      
-      
 
-      
-  
-      
-      <h2 id="howarraysaremadebehindthescenes">how arrays are made behind the scenes</h2>
-      <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (1).webp" alt="">
-      <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (2).webp" alt="">
-      <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (3).webp" alt="">
-      <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (4).webp" alt="">
-      <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (5).webp" alt="">
-      <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (6).webp" alt="">
-  
-  
-      <h2 id="Howtodeleteobjectprop">How to delete object prop</h2>
-      <img style="width: 100%" src="./images/Howtodeleteobjectprop (1).webp" alt="">
-      <img style="width: 100%" src="./images/Howtodeleteobjectprop (2).webp" alt="">
-      <img style="width: 100%" src="./images/Howtodeleteobjectprop (3).webp" alt="">
-  
-  
-      <h2 id="Newkeyword">New keyword</h2>
-      <img style="width: 100%" src="./images/newkeyword (1).webp" alt="">
-      <img style="width: 100%" src="./images/newkeyword (2).webp" alt="">
-  
-  
-      <h2 id="IIFI">IIFI</h2>
-      <img style="width: 100%" src="./images/iifi (1).webp" alt="">
-      <img style="width: 100%" src="./images/iifi (2).webp" alt="">
-      <img style="width: 100%" src="./images/iifi (3).webp" alt="">
-      <img style="width: 100%" src="./images/iifi (4).webp" alt="">
-      <img style="width: 100%" src="./images/iifi (5).webp" alt="">
-      <img style="width: 100%" src="./images/iifi (6).webp" alt="">
+    <h2 id="ifelseelseif">if else, else if</h2>
+    <p>1. In if else, the are two possible values in 'if' which are true or false, if value is true then 'if' part will
+      run otherwise else part will run.</p>
+    <img style="width: 100%" src="./images/ifelse1.webp" alt="">
+    <p>2. In else if, the only one part run same as 'if else'.</p>
+    <img style="width: 100%" src="./images/ifelse2.webp" alt="">
 
-      
-      <h2 id="PrototypalInheritence">Prototypal Inheritence</h2>
-      <img style="width: 100%" src="./images/prototypalinheritence (1).webp" alt="">
-      <img style="width: 100%" src="./images/prototypalinheritence (2).webp" alt="">
-      <img style="width: 100%" src="./images/prototypalinheritence (3).webp" alt="">
-      <img style="width: 100%" src="./images/prototypalinheritence (4).webp" alt="">
-      <img style="width: 100%" src="./images/prototypalinheritence (5).webp" alt="">
-      <img style="width: 100%" src="./images/prototypalinheritence (6).webp" alt="">
-        
-      <h2 id="Thiskeyword">This keyword</h2>
-      <img style="width: 100%" src="./images/thiskeyword (1).webp" alt="">
-      <img style="width: 100%" src="./images/thiskeyword (2).webp" alt="">
-      <img style="width: 100%" src="./images/thiskeyword (3).webp" alt="">
-      <img style="width: 100%" src="./images/thiskeyword (4).webp" alt="">
-      <img style="width: 100%" src="./images/thiskeyword (5).webp" alt="">
-      <img style="width: 100%" src="./images/thiskeyword (6).webp" alt="">
-      <img style="width: 100%" src="./images/thiskeyword (7).webp" alt="">
-      <img style="width: 100%" src="./images/thiskeyword (8).webp" alt="">
-      <img style="width: 100%" src="./images/thiskeyword (9).webp" alt="">
-      <img style="width: 100%" src="./images/thiskeyword (10).webp" alt="">
-      <img style="width: 100%" src="./images/thiskeyword (11).webp" alt="">
 
-      
-      <h2 id="CallApplyBind">Call Apply Bind</h2>
-      <img style="width: 100%" src="./images/callapplybind (1).webp" alt="">
-      <img style="width: 100%" src="./images/callapplybind (2).webp" alt="">
-      <img style="width: 100%" src="./images/callapplybind (3).webp" alt="">
-      <img style="width: 100%" src="./images/callapplybind (4).webp" alt="">   
-      
-      
-      
-      
-      
-      
-      
-      <h2 id="content37">DOM</h2>
-      <img src="./images/DOM (1).webp" alt="">
-      <img src="./images/DOM (2).webp" alt="">
-      <img src="./images/DOM (3).webp" alt="">
-      <img src="./images/DOM (4).webp" alt="">
-      
 
-      <h2 id="Dommanipulation">Dom manipulation</h2>
-      <img style="width: 100%" src="./images/dommanipulation (1).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (2).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (3).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (4).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (5).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (6).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (7).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (8).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (9).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (10).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (11).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (12).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (13).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (14).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (15).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (16).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (17).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (18).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (19).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (20).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (21).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (22).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (23).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (24).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (25).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (26).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (27).webp" alt="">
-      <img style="width: 100%" src="./images/dommanipulation (28).webp" alt=""> 
-      
-      <h2 id="content36">creating An Element</h2>
-      <img src="./images/creatingAnElement (1).webp" alt="">
-      <img src="./images/creatingAnElement (2).webp" alt="">
+    <h2 id="forloop">loops</h2>
+    <img style="width: 100%" src="./images/forloop1.webp" alt="">
+    <img style="width: 100%" src="./images/forloop2.webp" alt="">
+    <img style="width: 100%" src="./images/forloop3.webp" alt="">
+    <img style="width: 100%" src="./images/forloop4.webp" alt="">
+    <img style="width: 100%" src="./images/forloop5.webp" alt="">
+    <img src="./images/whileloop.webp" alt="">
+    <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (1).webp" alt="">
+    <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (2).webp" alt="">
+    <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (3).webp" alt="">
+    <img src="./images/forEach (1).webp" alt="">
+    <img src="./images/forEach (2).webp" alt="">
+    <img src="./images/forEach (3).webp" alt="">
+    <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (4).webp" alt="">
+    <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (5).webp" alt="">
+    <img style="width: 100%" src="./images/ForEach LoopFor inLoopDoWhileLoop (6).webp" alt="">
 
-      <h2 id="content38">adding A Created Element To BodyAs A Child</h2>
-      <img src="./images/addingACreatedElementToBodyAsAChild.webp" alt="">
+    <h2 id="content48">IndexOf()</h2>
+    <img src="./images/indexOf (1).webp" alt="">
+    <img src="./images/indexOf (2).webp" alt="">
 
-      
+    <h2 id="content47">filter</h2>
+    <img src="./images/filter (1).webp" alt="">
+    <img src="./images/filter (2).webp" alt="">
+    <img src="./images/filter (3).webp" alt="">
+    <img src="./images/filter (4).webp" alt="">
+    <img src="./images/filter (5).webp" alt="">
+    <img src="./images/filter (6).webp" alt="">
+    <img src="./images/filter (7).webp" alt="">
+    <img src="./images/filter (8).webp" alt="">
 
-      <h2 id="content41">adding A Class To An Element</h2>
-      <img src="./images/addingAClassToAnElement.webp" alt="">
+    <h2 id="content49">map</h2>
+    <img src="./images/map (1).webp" alt="">
+    <img src="./images/map (2).webp" alt="">
 
-      <h2 id="content42">setting Css Property To A Created Element In Javascript</h2>
-      <img src="./images/settingCssPropertyToACreatedElementInJavascript.webp" alt="">
+    <h2 id="Functions">Functions</h2>
+    <img style="width: 100%" src="./images/function1.webp" alt="">
+    <img style="width: 100%" src="./images/function2.webp" alt="">
+    <img style="width: 100%" src="./images/function5.webp" alt="">
+    <img style="width: 100%" src="./images/function6.webp" alt="">
+    <img style="width: 100%" src="./images/function7.webp" alt="">
+    <img style="width: 100%" src="./images/function8.webp" alt="">
+    <img style="width: 100%" src="./images/function9.webp" alt="">
+    <img style="width: 100%" src="./images/function10.webp" alt="">
+    <img src="./images/function (1).webp" alt="">
+    <img src="./images/function (2).webp" alt="">
+    <img src="./images/function (3).webp" alt="">
+    <img src="./images/function (4).webp" alt="">
+    <img src="./images/function (5).webp" alt="">
+    <img src="./images/function (6).webp" alt="">
+    <img src="./images/function (7).webp" alt="">
+    <img src="./images/function (8).webp" alt="">
 
-      <h2 id="content43">removing A Created Element</h2>
-      <img src="./images/removingACreatedElement.webp" alt="">
+    <h2 id="Arrowfunction">Arrow function</h2>
+    <img style="width: 100%" src="./images/arrowfnc (1).webp" alt="">
+    <img style="width: 100%" src="./images/arrowfnc (2).webp" alt="">
+    <img style="width: 100%" src="./images/arrowfnc (3).webp" alt="">
+    <img style="width: 100%" src="./images/arrowfnc (4).webp" alt="">
+    <img style="width: 100%" src="./images/arrowfnc (5).webp" alt="">
+    <img style="width: 100%" src="./images/arrowfnc (6).webp" alt="">
 
-      <h2 id="content34">Getting an element location in javascript</h2>
-      <img src="./images/mouseoverandgetboundaryclientmethod (1).webp" alt="">
-      <h2 id="content35">mousemove event & the MouseEvent and the details about the mouse</h2>
-      <img src="./images/mouseoverandgetboundaryclientmethod (2).webp" alt="">
-      <img src="./images/mouseoverandgetboundaryclientmethod (3).webp" alt="">
+    <p>
+      Implicit vs. Explicit Return in JavaScript Arrow Functions <br>
+      In arrow functions, the way you return a value can differ based on syntax: <br> <br>
 
-      <h2 id="content33">Math.abs()</h2>
-      <img src="./images/mouseoverandgetboundaryclientmethod (4).webp" alt="">
+      1. Explicit Return ({} with return) <br>
+      Requires {} curly braces and an explicit return statement. <br>
+      Use this when you have multiple statements in the function. <br>
+      Example: <br>
+      const add = (a, b) => { <br>
+      return a + b; // Explicitly returning a + b <br>
+      }; <br>
+      console.log(add(2, 3)); // Output: 5 <br>
+      Here, {} means you're using a function body, and you must use return to return a value. <br> <br>
+      2. Implicit Return (() without return) <br>
+      No {} means JavaScript automatically returns the result of the expression. <br>
+      Best for simple, single-expression functions. <br>
+      Example: <br>
+      const add = (a, b) => a + b; // Implicit return <br>
+      console.log(add(2, 3)); // Output: 5 <br>
+      or using (): <br>
+      const multiply = (a, b) => ( <br>
+      a * b // Implicitly returns the result <br>
+      ); <br>
+      console.log(multiply(3, 4)); // Output: 12 <br>
+      No need to write return explicitly. <br> <br>
+      Key Differences <br>
+      Feature Explicit Return {} Implicit Return () <br>
+      Uses {} ✅ Yes ❌ No <br>
+      Needs return ✅ Yes ❌ No (auto-returns) <br>
+      Handles multiple statements ✅ Yes ❌ No (only one expression) <br>
+      Good for complex logic? ✅ Yes ❌ No (better for one-liners) <br> <br>
+      When to Use What? <br>
+      ✅ Use explicit return ({} with return) if the function has multiple statements. <br>
+      ✅ Use implicit return (() without return) for simple one-liner expressions. <br> <br>
+      Example of When to Use Explicit Return <br>
+      const processNumber = (num) => { <br>
+      console.log("Processing:", num); // Side effect (logging) <br>
+      return num * 2; // Explicit return needed <br>
+      }; <br> <br>
+      Example of When to Use Implicit Return <br>
+      const double = num => num * 2; // Simple, so implicit return works <br>
+    </p>
+    <img src="./images/explicit return to the setMethod.webp" alt="">
 
-      <h2 id="content39">setting background color with dynamic values</h2>
-      <img src="./images/mouseoverandgetboundaryclientmethod (5).webp" alt="">
-  
-  
-      <h2 id="BubbleGame">Bubble Game</h2>
-      <img style="width: 100%" src="./images/bubblegame (1).webp" alt="">
-      <img style="width: 100%" src="./images/bubblegame (2).webp" alt="">
-      <img style="width: 100%" src="./images/bubblegame (3).webp" alt="">
-      <img style="width: 100%" src="./images/bubblegame (4).webp" alt="">
-      <img style="width: 100%" src="./images/bubblegame (5).webp" alt="">
-      <img style="width: 100%" src="./images/bubblegame (6).webp" alt="">
-      <img style="width: 100%" src="./images/bubblegame (7).webp" alt="">
-      <img style="width: 100%" src="./images/bubblegame (8).webp" alt="">
-      <img style="width: 100%" src="./images/bubblegame (9).webp" alt="">
-      <img style="width: 100%" src="./images/bubblegame (10).webp" alt="">
-      <img style="width: 100%" src="./images/bubblegame (11).webp" alt="">
-      <img style="width: 100%" src="./images/bubblegame (12).webp" alt="">
-      <vid style="width: 100%" src="./images/bubblegame (13).mp4" controls style="width: 100%"></video>
+    <h2 id="CallBackfnc">CallBack fnc</h2>
+    <img style="width: 100%" src="./images/callbackfnc (1).webp" alt="">
+    <img style="width: 100%" src="./images/callbackfnc (2).webp" alt="">
+    <img style="width: 100%" src="./images/callbackfnc (3).webp" alt="">
+    <img style="width: 100%" src="./images/callbackfnc (4).webp" alt="">
+    <img style="width: 100%" src="./images/callbackfnc (5).webp" alt="">
+    <img style="width: 100%" src="./images/callbackfnc (6).webp" alt="">
+
+
+
+    <h2 id="Firstclassfunction">First class function</h2>
+    <img style="width: 100%" src="./images/fistclassfnc (1).webp" alt="">
+    <img style="width: 100%" src="./images/fistclassfnc (2).webp" alt="">
+    <img style="width: 100%" src="./images/fistclassfnc (3).webp" alt="">
+
+    <h2 id="Higherorderfnc">Higher order fnc </h2>
+    <img style="width: 100%" src="./images/higherorderhnc (1).webp" alt="">
+    <img style="width: 100%" src="./images/higherorderhnc (2).webp" alt="">
+    <img style="width: 100%" src="./images/higherorderhnc (3).webp" alt="">
+    <img style="width: 100%" src="./images/higherorderhnc (4).webp" alt="">
+    <img style="width: 100%" src="./images/higherorderhnc (5).webp" alt="">
+
+    <h2 id="Constructor">Constructor</h2>
+    <img style="width: 100%" src="./images/constructor (1).webp" alt="">
+    <img style="width: 100%" src="./images/constructor (2).webp" alt="">
+    <img style="width: 100%" src="./images/constructor (3).webp" alt="">
+    <img style="width: 100%" src="./images/constructor (4).webp" alt="">
+    <img style="width: 100%" src="./images/constructor (5).webp" alt="">
+    <img style="width: 100%" src="./images/constructor (6).webp" alt="">
+
+    <h2 id="PureImpurefnc">Pure Impure fnc</h2>
+    <img src="./images/pureimpurefnc (1).webp" alt="">
+    <img src="./images/pureimpurefnc (2).webp" alt="">
+    <img src="./images/pureimpurefnc (3).webp" alt="">
+    <img src="./images/pureimpurefnc (4).webp" alt="">
+    <img src="./images/pureimpurefnc (5).webp" alt="">
+
+
+    <h2 id="Array">Array</h2>
+    <img style="width: 100%" src="./images/array1.webp" alt="">
+    <img style="width: 100%" src="./images/array2.webp" alt="">
+    <img style="width: 100%" src="./images/array3.webp" alt="">
+    <img style="width: 100%" src="./images/array4.webp" alt="">
+    <img style="width: 100%" src="./images/array5.webp" alt="">
+    <img style="width: 100%" src="./images/array6.webp" alt="">
+    <img style="width: 100%" src="./images/array7.webp" alt="">
+    <img style="width: 100%" src="./images/array8.webp" alt="">
+    <img src="./images/array.webp" alt="">
+
+
+    <h2 id="Object">Object</h2>
+    <img style="width: 100%" src="./images/object1.webp" alt="">
+    <img style="width: 100%" src="./images/object2.webp" alt="">
+    <img style="width: 100%" src="./images/object3.webp" alt="">
+    <img style="width: 100%" src="./images/object4.webp" alt="">
+    <img style="width: 100%" src="./images/object5.webp" alt="">
+    <img style="width: 100%" src="./images/object6.webp" alt="">
+    <img src="./images/object (1).webp" alt="">
+    <img src="./images/object (2).webp" alt="">
+    <img src="./images/object (3).webp" alt="">
+    <img src="./images/object (4).webp" alt="">
+    <img src="./images/object (5).webp" alt="">
+    <img src="./images/object (6).webp" alt="">
+    <img src="./images/object (7).webp" alt="">
+    <img src="./images/object (8).webp" alt="">
+    <img src="./images/object (9).webp" alt="">
+    <img src="./images/object (10).webp" alt="">
+    <img src="./images/object (11).webp" alt="">
+    <img src="./images/object (12).webp" alt="">
+    <img src="./images/object (13).webp" alt="">
+
+
+
+    <h2 id="JavascriptVersions">Javascript Versions</h2>
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (1).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (2).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (3).webp" alt="">
+
+
+    <h2 id="DifferencedifferenceBetweenvarletconst">Difference difference Between var let const</h2>
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (4).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (5).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (6).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (7).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (8).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (9).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (10).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (11).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (12).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (13).webp" alt="">
+    <img style="width: 100%" src="./images/differenceBetweenvarletconst (14).webp" alt="">
+
+
+
+
+
+
+    <h2 id="Stack">Stack</h2>
+    <img style="width: 100%" src="./images/stack.webp" alt="">
+
+
+    <h2 id="Heapmemory">Heap memory</h2>
+    <img style="width: 100%" src="./images/heapmemory.webp" alt="">
+
+
+    <h2 id="ExecutionContext">Execution Context</h2>
+    <img style="width: 100%" src="./images/executioncontext (1).webp" alt="">
+    <img style="width: 100%" src="./images/executioncontext (2).webp" alt="">
+    <img style="width: 100%" src="./images/executioncontext (3).webp" alt="">
+    <img style="width: 100%" src="./images/executioncontext (4).webp" alt="">
+    <img style="width: 100%" src="./images/executioncontext (5).webp" alt="">
+
+
+    <h2 id="Howtocopyreferencevalues">How to copy reference values</h2>
+    <img style="width: 100%" src="./images/howtocopyreferencevalues (1).webp" alt="">
+    <img style="width: 100%" src="./images/howtocopyreferencevalues (2).webp" alt="">
+    <img style="width: 100%" src="./images/howtocopyreferencevalues (3).webp" alt="">
+    <img style="width: 100%" src="./images/howtocopyreferencevalues (4).webp" alt="">
+
+
+    <h2 id="content17">Truthy of Falsy</h2>
+    <img style="width: 100%" src="./images/17 truthyorFalsy (1).webp" alt="">
+    <img style="width: 100%" src="./images/17 truthyorFalsy (2).webp" alt="">
+
+
+
+
+
+
+
+
+    <h2 id="howarraysaremadebehindthescenes">how arrays are made behind the scenes</h2>
+    <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (1).webp" alt="">
+    <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (2).webp" alt="">
+    <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (3).webp" alt="">
+    <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (4).webp" alt="">
+    <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (5).webp" alt="">
+    <img style="width: 100%" src="./images/howarraysaremadebehindthescenes (6).webp" alt="">
+
+
+    <h2 id="Howtodeleteobjectprop">How to delete object prop</h2>
+    <img style="width: 100%" src="./images/Howtodeleteobjectprop (1).webp" alt="">
+    <img style="width: 100%" src="./images/Howtodeleteobjectprop (2).webp" alt="">
+    <img style="width: 100%" src="./images/Howtodeleteobjectprop (3).webp" alt="">
+
+
+    <h2 id="Newkeyword">New keyword</h2>
+    <img style="width: 100%" src="./images/newkeyword (1).webp" alt="">
+    <img style="width: 100%" src="./images/newkeyword (2).webp" alt="">
+
+
+    <h2 id="IIFI">IIFI</h2>
+    <img style="width: 100%" src="./images/iifi (1).webp" alt="">
+    <img style="width: 100%" src="./images/iifi (2).webp" alt="">
+    <img style="width: 100%" src="./images/iifi (3).webp" alt="">
+    <img style="width: 100%" src="./images/iifi (4).webp" alt="">
+    <img style="width: 100%" src="./images/iifi (5).webp" alt="">
+    <img style="width: 100%" src="./images/iifi (6).webp" alt="">
+
+
+    <h2 id="PrototypalInheritence">Prototypal Inheritence</h2>
+    <img style="width: 100%" src="./images/prototypalinheritence (1).webp" alt="">
+    <img style="width: 100%" src="./images/prototypalinheritence (2).webp" alt="">
+    <img style="width: 100%" src="./images/prototypalinheritence (3).webp" alt="">
+    <img style="width: 100%" src="./images/prototypalinheritence (4).webp" alt="">
+    <img style="width: 100%" src="./images/prototypalinheritence (5).webp" alt="">
+    <img style="width: 100%" src="./images/prototypalinheritence (6).webp" alt="">
+
+    <h2 id="Thiskeyword">This keyword</h2>
+    <img style="width: 100%" src="./images/thiskeyword (1).webp" alt="">
+    <img style="width: 100%" src="./images/thiskeyword (2).webp" alt="">
+    <img style="width: 100%" src="./images/thiskeyword (3).webp" alt="">
+    <img style="width: 100%" src="./images/thiskeyword (4).webp" alt="">
+    <img style="width: 100%" src="./images/thiskeyword (5).webp" alt="">
+    <img style="width: 100%" src="./images/thiskeyword (6).webp" alt="">
+    <img style="width: 100%" src="./images/thiskeyword (7).webp" alt="">
+    <img style="width: 100%" src="./images/thiskeyword (8).webp" alt="">
+    <img style="width: 100%" src="./images/thiskeyword (9).webp" alt="">
+    <img style="width: 100%" src="./images/thiskeyword (10).webp" alt="">
+    <img style="width: 100%" src="./images/thiskeyword (11).webp" alt="">
+
+
+    <h2 id="CallApplyBind">Call Apply Bind</h2>
+    <img style="width: 100%" src="./images/callapplybind (1).webp" alt="">
+    <img style="width: 100%" src="./images/callapplybind (2).webp" alt="">
+    <img style="width: 100%" src="./images/callapplybind (3).webp" alt="">
+    <img style="width: 100%" src="./images/callapplybind (4).webp" alt="">
+
+
+
+
+
+
+
+    <h2 id="content37">DOM</h2>
+    <img src="./images/DOM (1).webp" alt="">
+    <img src="./images/DOM (2).webp" alt="">
+    <img src="./images/DOM (3).webp" alt="">
+    <img src="./images/DOM (4).webp" alt="">
+
+
+    <h2 id="Dommanipulation">Dom manipulation</h2>
+    <img style="width: 100%" src="./images/dommanipulation (1).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (2).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (3).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (4).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (5).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (6).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (7).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (8).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (9).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (10).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (11).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (12).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (13).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (14).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (15).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (16).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (17).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (18).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (19).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (20).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (21).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (22).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (23).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (24).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (25).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (26).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (27).webp" alt="">
+    <img style="width: 100%" src="./images/dommanipulation (28).webp" alt="">
+
+    <h2 id="content36">creating An Element</h2>
+    <img src="./images/creatingAnElement (1).webp" alt="">
+    <img src="./images/creatingAnElement (2).webp" alt="">
+
+    <h2 id="content38">adding A Created Element To BodyAs A Child</h2>
+    <img src="./images/addingACreatedElementToBodyAsAChild.webp" alt="">
+
+
+
+    <h2 id="content41">adding A Class To An Element</h2>
+    <img src="./images/addingAClassToAnElement.webp" alt="">
+
+    <h2 id="content42">setting Css Property To A Created Element In Javascript</h2>
+    <img src="./images/settingCssPropertyToACreatedElementInJavascript.webp" alt="">
+
+    <h2 id="content43">removing A Created Element</h2>
+    <img src="./images/removingACreatedElement.webp" alt="">
+
+    <h2 id="content34">Getting an element location in javascript</h2>
+    <img src="./images/mouseoverandgetboundaryclientmethod (1).webp" alt="">
+    <h2 id="content35">mousemove event & the MouseEvent and the details about the mouse</h2>
+    <img src="./images/mouseoverandgetboundaryclientmethod (2).webp" alt="">
+    <img src="./images/mouseoverandgetboundaryclientmethod (3).webp" alt="">
+
+    <h2 id="content33">Math.abs()</h2>
+    <img src="./images/mouseoverandgetboundaryclientmethod (4).webp" alt="">
+
+    <h2 id="content39">setting background color with dynamic values</h2>
+    <img src="./images/mouseoverandgetboundaryclientmethod (5).webp" alt="">
+
+
+    <h2 id="BubbleGame">Bubble Game</h2>
+    <img style="width: 100%" src="./images/bubblegame (1).webp" alt="">
+    <img style="width: 100%" src="./images/bubblegame (2).webp" alt="">
+    <img style="width: 100%" src="./images/bubblegame (3).webp" alt="">
+    <img style="width: 100%" src="./images/bubblegame (4).webp" alt="">
+    <img style="width: 100%" src="./images/bubblegame (5).webp" alt="">
+    <img style="width: 100%" src="./images/bubblegame (6).webp" alt="">
+    <img style="width: 100%" src="./images/bubblegame (7).webp" alt="">
+    <img style="width: 100%" src="./images/bubblegame (8).webp" alt="">
+    <img style="width: 100%" src="./images/bubblegame (9).webp" alt="">
+    <img style="width: 100%" src="./images/bubblegame (10).webp" alt="">
+    <img style="width: 100%" src="./images/bubblegame (11).webp" alt="">
+    <img style="width: 100%" src="./images/bubblegame (12).webp" alt="">
+    <vid style="width: 100%" src="./images/bubblegame (13).mp4" controls style="width: 100%"></video>
       <img style="width: 100%" src="./images/bubblegame (13).webp" alt="">
       <img style="width: 100%" src="./images/bubblegame (14).webp" alt="">
       <img style="width: 100%" src="./images/bubblegame (15).webp" alt="">
@@ -552,27 +562,30 @@
       <img src="./images/asynAwait (5).webp" alt="">
       <img src="./images/asynAwait (6).webp" alt="">
       <img src="./images/asynAwait (7).webp" alt="">
-      
 
-      
 
-      
-      <div class="end"><h3>END PAGE</h3></div>
-      
-      
 
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- gsap min js -->
-     <!-- search gsap cdn on browser and copy the link and paste it here -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- gsap scrollTrigger min js -->
-    <!-- search gsap cdn on browser and look for scrollTrigger may be at 2nd last you will get -->    
-    <script src="../srcipt.js"></script>
-  </body>
+
+      <div class="end">
+        <h3>END PAGE</h3>
+      </div>
+
+
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- gsap min js -->
+  <!-- search gsap cdn on browser and copy the link and paste it here -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- gsap scrollTrigger min js -->
+  <!-- search gsap cdn on browser and look for scrollTrigger may be at 2nd last you will get -->
+  <script src="../srcipt.js"></script>
+</body>
+
 </html>
-
-
-
-
